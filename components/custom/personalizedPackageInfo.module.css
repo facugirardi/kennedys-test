@@ -1,0 +1,213 @@
+.package {
+  position: relative;
+  top: 5488px;
+  left: 0;
+  width: 1480px;
+  height: 642px;
+  font-size: var(--title-xs-size);
+  color: var(--sand);
+  margin: auto;
+  text-align: left;
+  font-family: var(--text-s-light);
+}
+
+.packagesContainer {
+  position: absolute;
+  top: 505px;
+  left: 39.5px;
+  width: 100%;
+  height: 137px;
+  max-width: 100%;
+}
+
+.packageDetails {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.row {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-28xl);
+}
+
+.block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  min-width: 296px;
+  max-width: 100%;
+}
+
+.stars {
+  margin: 0;
+  width: 90px;
+  position: relative;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.stars1 {
+  margin: 0;
+  width: 91px;
+  position: relative;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.stars2 {
+  margin: 0;
+  min-width: 89px;
+  position: relative;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.indulgeInA {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--black);
+}
+
+.packageFeatures {
+  position: absolute;
+  top: -97px;
+  left: 0;
+  width: 100%;
+  height: 588px;
+  font-size: var(--title-r-size);
+  color: var(--black);
+}
+
+.featureList {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  width: 100%;
+  height: 100%;
+}
+
+.featureItemChild {
+  position: absolute;
+  top: 126px;
+  left: calc(50% - 740px);
+  background-color: var(--grey-200);
+  width: 1482px;
+  height: 420px;
+}
+
+.featureDescription {
+  position: absolute;
+  top: calc(50% - 50.5px);
+  left: 954px;
+  width: 402px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+
+.villaTheresaOffer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.experienceLuxuryAt,
+.villaTheresaIs {
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.experienceLuxuryAtContainer {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  line-height: 140%;
+}
+
+.star6StarAnd {
+  letter-spacing: 0.01em;
+  font-family: var(--text-s-light);
+}
+
+.eachOfferingA {
+  letter-spacing: 0.02em;
+}
+
+.featureItemItem,
+.featureItemInner,
+.rectangleIcon {
+  position: absolute;
+  object-fit: cover;
+}
+
+.featureItemItem {
+  top: 52;
+  left: 93;
+  width: 500px;
+  height: 258px;
+}
+
+.featureItemInner {
+  top: 208px;
+  left: 416px;
+  width: 500px;
+  height: 258px;
+}
+
+.rectangleIcon {
+  top: 355px;
+  left: 78px;
+  width: 414px;
+  height: 221px;
+}
+
+@media screen and (max-width: 450px) {
+
+  .package,
+  .packageDetails,
+  .packagesContainer {
+    height: auto;
+    min-height: 137px;
+  }
+
+  .package {
+    min-height: 642px;
+  }
+}

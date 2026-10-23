@@ -1,0 +1,94 @@
+.partyImagesIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 409px;
+  height: 331px;
+  object-fit: cover;
+}
+.themedParties {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  letter-spacing: 0.01em;
+  line-height: 100%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 353.6px;
+  height: 103.3px;
+}
+.partyIcons {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 313px;
+  height: 0;
+}
+.partyInfo,
+.partyTypes {
+  position: absolute;
+  top: 349px;
+  left: 10px;
+  width: 353.6px;
+  height: 103.3px;
+}
+.partyInfo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.date {
+  flex: 1;
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 57px;
+}
+.capa1Icon {
+  height: 12px;
+  width: 7.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.shortInfo {
+  position: absolute;
+  top: 407px;
+  left: 334px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  text-align: right;
+  font-size: var(--text-s-light-size);
+}
+.partyInfoParent {
+  position: absolute;
+  top: 105px;
+  left: 82px;
+  width: 409px;
+  height: 452.3px;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 750px) {
+  .themedParties {
+    font-size: var(--title-xs-size);
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .themedParties {
+    font-size: var(--font-size-lg);
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,209 @@
+.a {
+  height: 23px;
+  width: 115px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.button {
+  height: 23px;
+  width: 138px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-9xs);
+}
+
+.contact,
+.vuesaxlinearsmsIcon {
+  height: 19px;
+  width: 19px;
+  position: relative;
+}
+
+.contact {
+  height: 23px;
+  width: 55px;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.button1,
+.topMenu {
+  height: 23px;
+  width: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+}
+
+.topMenu {
+  width: 239px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+
+.concierge,
+.events,
+.realEstate,
+.vacationRentals {
+  height: 24px;
+  width: 119px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.concierge,
+.events,
+.realEstate {
+  width: 75px;
+}
+
+.events,
+.realEstate {
+  width: 49px;
+}
+
+.realEstate {
+  width: 81px;
+}
+
+.pageLinks {
+  margin: 0;
+  height: 24px;
+  width: 503.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-116xl-5) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+
+.capa1Icon {
+  height: 27px;
+  width: 309px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logIn1,
+.weManageYour {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.weManageYour {
+  height: 24px;
+  width: 168px;
+  text-decoration: underline;
+}
+
+.logIn1 {
+  height: 21px;
+  width: 39px;
+  font-size: var(--text-s-light-size);
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: right;
+}
+
+.logIn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs) var(--padding-5xl);
+  background-color: var(--sand);
+  height: 29px;
+  width: 86px;
+  border-radius: var(--br-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.imageIcon {
+  width: 43px;
+  position: relative;
+  border-radius: var(--br-9xl);
+  height: 43px;
+  object-fit: cover;
+}
+
+.image,
+.nav,
+.right,
+.topNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image {
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+
+.nav,
+.right,
+.topNav {
+  height: 29px;
+}
+
+.right {
+  width: 503.5px;
+  justify-content: flex-end;
+  padding: 0 0 0 var(--padding-175xl-5);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+}
+
+.nav,
+.topNav {
+  width: 1316px;
+  justify-content: space-between;
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+}
+
+.nav {
+  height: 114px;
+  width: 100%;
+  background-color: var(--white);
+  border-top: 8px solid var(--sand);
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-9xl) var(--padding-41xl) var(--padding-5xl) var(--padding-45xl);
+  gap: var(--gap-3xs);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}

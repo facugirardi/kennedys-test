@@ -1,0 +1,75 @@
+--- a/src/services/emailService.ts
++++ b/src/services/emailService.ts
+@@ -20,6 +20,8 @@
+   "'Neue Haas Grotesk Text', 'Neue Haas Grotesk Display', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+ const FONT_LABEL = "'Neue Haas Grotesk Display', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+ 
++const EMAIL_LOGO_CID = "kennedys-logo";
++
+ const getWebBaseUrl = (): string => {
+   const base =
+     process.env.EMAIL_ASSET_BASE_URL ||
+@@ -36,6 +38,22 @@
+  */
+ const getLogoUrl = (): string =>
+   process.env.EMAIL_LOGO_URL || `${getWebBaseUrl()}/images/logo-email.png`;
++
++const getLogoSrc = (): string =>
++  process.env.EMAIL_LOGO_CID_PATH?.trim() ? `cid:${EMAIL_LOGO_CID}` : getLogoUrl();
++
++const getLogoAttachments = () => {
++  const logoPath = process.env.EMAIL_LOGO_CID_PATH?.trim();
++  if (!logoPath) return undefined;
++
++  return [
++    {
++      filename: "kennedys-logo.png",
++      path: logoPath,
++      cid: EMAIL_LOGO_CID,
++    },
++  ];
++};
+ 
+ const buildTransporter = (): Transporter => {
+   const host = process.env.SMTP_HOST;
+@@ -160,7 +178,7 @@
+   footerHtml?: string;
+   preheader?: string;
+ }) => {
+-  const logoUrl = getLogoUrl();
++  const logoUrl = getLogoSrc();
+   const preheader = params.preheader?.trim() ? escapeHtml(params.preheader.trim()) : "";
+ 
+   const lead = params.leadHtml?.trim()
+@@ -467,6 +485,7 @@
+     subject,
+     html,
+     text,
++    attachments: getLogoAttachments(),
+   };
+ 
+   await getTransporter().sendMail(mailOptions);
+@@ -525,6 +544,7 @@
+       subject,
+       html,
+       text,
++      attachments: getLogoAttachments(),
+     });
+     console.log(`✅ Verification code email sent to ${email}`);
+   } catch (error) {
+@@ -642,6 +662,7 @@
+     subject,
+     html,
+     text,
++    attachments: getLogoAttachments(),
+   });
+ };
+ 
+@@ -689,6 +710,7 @@
+       subject,
+       html,
+       text,
++      attachments: getLogoAttachments(),
+     });
+     console.log(`✅ Contact confirmation email sent to ${input.email}`);
+   } catch (error) {

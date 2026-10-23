@@ -1,0 +1,69 @@
+.imageIcon,
+.innerFloatingContainer {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.imageIcon {
+  flex: 1;
+}
+.imageLayout,
+.imageLayout1,
+.singleImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.imageLayout1 {
+  padding: 0 var(--padding-11xs) 0 0;
+}
+.singleImageContainer {
+  height: 168px;
+}
+.imageContainer,
+.imageInnerContentWrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+}
+.imageInnerContentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.imageContainer {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-lg);
+  grid-template-columns: repeat(4, minmax(234px, 1fr));
+}
+.floatingContainer {
+  position: absolute;
+  top: 2996px;
+  left: calc(50% - 720px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+@media screen and (max-width: 1225px) {
+  .imageContainer {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(234px, 405px));
+  }
+}
+@media screen and (max-width: 750px) {
+  .imageContainer {
+    grid-template-columns: minmax(234px, 1fr);
+  }
+}

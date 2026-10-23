@@ -1,0 +1,55 @@
+.budget {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div {
+  position: relative;
+  line-height: 24px;
+}
+.container,
+.fieldText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-0);
+  row-gap: 20px;
+}
+.fieldText {
+  align-self: stretch;
+  height: 44px;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm)
+    var(--padding-sm);
+  gap: var(--gap-3xs);
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-medium-16-medium);
+}
+.inputLabelPairs {
+  width: 187px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  text-align: left;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}

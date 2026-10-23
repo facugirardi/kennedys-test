@@ -1,0 +1,214 @@
+.meetOurTeam {
+  margin: 0 !important;
+  width: 1151px;
+  position: absolute;
+  top: 38px;
+  right: 123px;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.label {
+  flex: 1;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 82px;
+}
+.vectorIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base-5) var(--padding-29xl);
+  background-color: var(--color-aqua-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.buttons:hover {
+  background-color: var(--color-lightseagreen-200);
+}
+.memberPhotoIcon,
+.name {
+  position: relative;
+  max-width: 100%;
+}
+.memberPhotoIcon {
+  align-self: stretch;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.name {
+  margin: 0;
+  flex: 1;
+  font-size: inherit;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.teamMember,
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.title {
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 147px;
+  left: 0;
+  flex-direction: row;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.teamMember {
+  align-self: stretch;
+  flex-direction: column;
+  position: relative;
+  gap: var(--gap-5xs);
+}
+.aToZ {
+  margin-bottom: 15px;
+}
+.aToZPropertyConsultancyC {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.aToZContainer {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 244px;
+  max-width: 100%;
+}
+.guestsMeetContainer,
+.reservationsManagementContainer {
+  position: relative;
+  line-height: 140%;
+  display: inline-block;
+  max-width: 100%;
+}
+.reservationsManagementContainer {
+  height: 273px;
+  flex: 1;
+  min-width: 244px;
+}
+.guestsMeetContainer {
+  height: 266px;
+}
+.row {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-59xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-black);
+}
+.meetOurTeamParent,
+.teamContent,
+.teamInfo {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.teamInfo {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-21xl);
+}
+.meetOurTeamParent,
+.teamContent {
+  flex-direction: row;
+}
+.teamContent {
+  flex: 1;
+  align-items: flex-end;
+  z-index: 1;
+  font-size: var(--font-size-45xl);
+}
+.meetOurTeamParent {
+  align-self: stretch;
+  align-items: flex-start;
+  position: relative;
+  text-align: center;
+  font-size: var(--title-xr-size);
+  color: var(--white);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1200px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .meetOurTeam {
+    font-size: var(--font-size-7xl);
+    line-height: 25px;
+  }
+  .name {
+    font-size: var(--font-size-32xl);
+    line-height: 49px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .row {
+    gap: var(--gap-20xl);
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+  .teamInfo {
+    gap: var(--gap-xl);
+  }
+  .teamContent {
+    gap: var(--gap-11xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .meetOurTeam {
+    font-size: var(--font-size-lgi);
+    line-height: 18px;
+  }
+  .buttons {
+    width: calc(100% - 40px);
+  }
+  .name {
+    font-size: var(--font-size-19xl);
+    line-height: 37px;
+  }
+  .row {
+    gap: var(--gap-lgi);
+  }
+}

@@ -1,0 +1,82 @@
+.imageIcon {
+  align-self: stretch;
+  height: 183px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+.vuesaxlinearheartWrapper {
+  margin: 0 !important;
+  position: absolute;
+  top: 12px;
+  left: 255px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  z-index: 1;
+}
+.p {
+  margin: 0;
+}
+.mykonos {
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.top,
+.topWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.topWrapper {
+  z-index: 2;
+}
+.bathrooms,
+.bedrooms {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+  min-width: 82px;
+}
+.bathrooms {
+  flex: 1;
+  min-width: 61px;
+}
+.bedroomsParent,
+.propertyCardOne {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.bedroomsParent {
+  align-self: stretch;
+  flex-direction: row;
+  z-index: 3;
+  font-size: var(--text-medium-16-medium-size);
+}
+.propertyCardOne {
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 750px) {
+  .bedroomsParent {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,55 @@
+.image6Icon {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 1252px;
+  height: 465px;
+  object-fit: cover;
+}
+.distanceDivider {
+  border: 0;
+  background-color: var(--white);
+  height: 187px;
+  width: 390px;
+  outline: 0;
+  position: absolute;
+  top: 107px;
+  left: 37px;
+}
+.locationAndDistances {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 589px);
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 1152px;
+}
+.locationDistances {
+  position: absolute;
+  top: 6287px;
+  left: 107px;
+  width: 1252px;
+  height: 535px;
+  text-align: center;
+  font-size: var(--title-m-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 800px) {
+  .locationAndDistances {
+    font-size: var(--font-size-18xl);
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .locationAndDistances {
+    font-size: var(--title-s-size);
+    line-height: 26px;
+  }
+}

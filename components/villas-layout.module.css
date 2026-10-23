@@ -1,0 +1,110 @@
+.villasImagesIcon {
+  align-self: stretch;
+  height: 240px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+.villasHearts {
+  margin: 0 !important;
+  position: absolute;
+  top: 35px;
+  left: 338px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  z-index: 1;
+}
+.title {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  line-height: 32px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.title1,
+.title2 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  color: var(--color-darkslategray-100);
+}
+.title2 {
+  color: var(--sand);
+  white-space: pre-wrap;
+}
+.capa1Icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 7.6px;
+  height: 12px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.title3 {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+}
+.villaCapacityLayout {
+  align-self: stretch;
+  height: 30.7px;
+  position: relative;
+}
+.villaCapacity {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 var(--padding-17xl) 0 0;
+}
+.villaCapacity,
+.villasInfo,
+.villasLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.villasInfo {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+  z-index: 2;
+}
+.villasLayout {
+  flex: 1;
+  background-color: var(--white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  align-items: center;
+  padding: var(--padding-3xl) var(--padding-4xl);
+  position: relative;
+  gap: var(--gap-9xl);
+  min-width: 308px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1050px) {
+  .title {
+    font-size: var(--title-xs-size);
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+}

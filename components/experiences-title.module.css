@@ -1,0 +1,96 @@
+.label,
+.text {
+  position: relative;
+}
+.text {
+  margin: 0;
+  align-self: stretch;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+}
+.label {
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 81px;
+}
+.experiencesButtonIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-aqua-100);
+  position: absolute;
+  top: 523px;
+  left: calc(50% - 97px);
+  width: 194px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  white-space: nowrap;
+}
+.buttons:hover {
+  background-color: var(--color-lightseagreen-200);
+}
+.experiences {
+  width: 1164px;
+  height: 538px;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-gt-super-txt-trial);
+}
+.experiencesTitle {
+  position: absolute;
+  top: 6879px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--title-m-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 800px) {
+  .text {
+    font-size: var(--font-size-18xl);
+    line-height: 35px;
+  }
+  .experiencesTitle {
+    gap: var(--gap-5xl);
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .text {
+    font-size: var(--title-s-size);
+    line-height: 26px;
+  }
+}

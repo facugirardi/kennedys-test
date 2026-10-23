@@ -1,0 +1,447 @@
+.xIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.xWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contactUs {
+  margin: 0;
+  width: 181px;
+  position: relative;
+  font-size: var(--title-r-size);
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--black);
+  text-align: center;
+  display: inline-block;
+}
+.iNeedMore,
+.jetRental {
+  position: relative;
+  line-height: 24px;
+}
+.iNeedMore {
+  align-self: stretch;
+}
+.jetRental {
+  flex: 1;
+  display: inline-block;
+  max-width: calc(100% - 32px);
+}
+.text,
+.typing {
+  position: relative;
+  display: none;
+}
+.text {
+  line-height: 24px;
+  font-family: var(--text-medium-16-medium);
+  color: var(--text-30);
+}
+.typing {
+  height: 24px;
+  width: 2px;
+  background-color: var(--gray-40);
+}
+.dateSelection {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.xIcon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.tripDetails {
+  align-self: stretch;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  border: 1px solid var(--blue-20);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-2xs);
+  gap: var(--gap-5xs);
+  min-height: 48px;
+  max-width: 100%;
+  color: var(--grey-grey-dark);
+}
+.xIcon2 {
+  height: 12px;
+  width: 12px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.helperText {
+  position: relative;
+  line-height: 16px;
+}
+.baseTextFields,
+.helper {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.helper {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-9xs) 0 0 var(--padding-9xs);
+  font-size: var(--text-small-12-bold-size);
+  color: var(--text-30);
+  font-family: var(--text-medium-16-medium);
+}
+.baseTextFields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.tulum {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+}
+.tulumParent {
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xs);
+}
+.baseTextFields1,
+.frameParent,
+.tulumParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  border: 1px solid var(--blue-20);
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-3xs) var(--padding-2xs);
+  gap: var(--gap-5xs);
+  min-height: 48px;
+  color: var(--grey-grey-dark);
+}
+.baseTextFields1 {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 161px;
+}
+.estimatedDate {
+  align-self: stretch;
+  font-family: var(--text-s-light);
+  color: var(--gray-40);
+}
+.estimatedDate,
+.placeholder,
+.text2 {
+  position: relative;
+  line-height: 24px;
+}
+.placeholder {
+  width: calc(100% - 24px);
+  border: 0;
+  outline: 0;
+  font-family: var(--text-s-light);
+  font-size: var(--text-medium-16-medium-size);
+  background-color: transparent;
+  flex: 1;
+  color: var(--grey-grey-dark);
+  text-align: left;
+  display: inline-block;
+  min-width: 116px;
+  padding: 0;
+}
+.text2 {
+  display: none;
+}
+.frameGroup,
+.helper2 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frameGroup {
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  border: 1px solid var(--blue-20);
+  box-sizing: border-box;
+  display: flex;
+  padding: var(--padding-3xs) var(--padding-2xs);
+  gap: var(--gap-5xs);
+  min-height: 48px;
+}
+.helper2 {
+  display: none;
+  padding: var(--padding-9xs) 0 0 var(--padding-9xs);
+  gap: var(--gap-9xs);
+  font-size: var(--text-small-12-bold-size);
+}
+.baseTextFields2,
+.formFields {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.baseTextFields2 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-9xs);
+  min-width: 161px;
+  color: var(--text-30);
+  font-family: var(--text-medium-16-medium);
+}
+.formFields {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.firstAndLast {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--text-s-light);
+  font-size: var(--text-medium-16-medium-size);
+  background-color: transparent;
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  color: var(--gray-40);
+  text-align: left;
+  display: inline-block;
+  min-width: 250px;
+  padding: 0;
+}
+.baseTextFields3,
+.frameContainer,
+.textParent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.textParent {
+  height: 24px;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xs);
+}
+.baseTextFields3,
+.frameContainer {
+  align-self: stretch;
+}
+.frameContainer {
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  border: 1px solid var(--blue-20);
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-3xs) var(--padding-2xs);
+  gap: var(--gap-5xs);
+}
+.baseTextFields3 {
+  height: 76px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  color: var(--text-30);
+  font-family: var(--text-medium-16-medium);
+}
+.frameChild,
+.frameParent1 {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.frameChild {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: var(--text-s-light);
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--text-30);
+  min-width: 250px;
+}
+.frameParent1 {
+  align-self: stretch;
+  height: 48px;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  border: 1px solid var(--blue-20);
+  box-sizing: border-box;
+  padding: var(--padding-3xs) var(--padding-2xs);
+  gap: var(--gap-5xs);
+}
+.baseTextAreasChild,
+.frameParent1,
+.helper7 {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.baseTextAreasChild {
+  border: 1px solid var(--blue-20);
+  background-color: var(--white);
+  height: 86px;
+  width: auto;
+  outline: 0;
+  align-self: stretch;
+  border-radius: var(--br-base);
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-xs);
+}
+.helper7 {
+  display: none;
+  align-items: center;
+  padding: var(--padding-9xs) 0 0 var(--padding-9xs);
+  gap: var(--gap-9xs);
+}
+.number {
+  position: relative;
+  line-height: 16px;
+  display: inline-block;
+  min-width: 34px;
+}
+.count,
+.helper6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.count {
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0 var(--padding-9xs);
+}
+.helper6 {
+  align-self: stretch;
+  justify-content: flex-end;
+  gap: var(--gap-9xs);
+  font-size: var(--text-small-12-bold-size);
+  color: var(--text-30);
+  font-family: var(--text-medium-16-medium);
+}
+.baseTextAreas,
+.textAreas {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.baseTextAreas {
+  gap: var(--gap-9xs);
+}
+.textAreas {
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--gray-40);
+  font-family: var(--text-s-light);
+}
+.bookA30,
+.bookA301 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  display: inline-block;
+}
+.bookA30 {
+  text-decoration: underline;
+  min-width: 50px;
+}
+.bookA301 {
+  flex: 1;
+  font-size: var(--text-medium-16-medium-size);
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: center;
+  min-width: 38px;
+}
+.bookA30MinCoachingSessionWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl) var(--padding-xs)
+    var(--padding-6xl);
+  background-color: var(--sand);
+  border-radius: var(--br-31xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bookA30MinCoachingSessionWrapper:hover {
+  background-color: var(--color-peru-100);
+}
+.bookA30MinCoachingSessionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: center;
+  color: var(--black);
+}
+.contact {
+  width: 600px;
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xl) var(--padding-21xl) var(--padding-29xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+  line-height: normal;
+  letter-spacing: normal;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--gray-40);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 750px) {
+  .bookA30MinCoachingSessionParent {
+    flex-wrap: wrap;
+  }
+}

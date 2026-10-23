@@ -1,0 +1,314 @@
+.luxuryVacationRentals {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.rentalSearchBackground {
+  width: 1066px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.bedrooms {
+  position: relative;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: left;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.bedroomInput {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  line-height: 24px;
+  font-family: var(--text-medium-16-medium);
+  color: var(--grey-grey-dark);
+  text-align: left;
+}
+
+.container,
+.fieldText {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  justify-content: space-between;
+  gap: var(--gap-0);
+  row-gap: 20px;
+}
+
+.fieldText {
+  align-self: stretch;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm) var(--padding-sm);
+}
+
+.bedroomsAndBudget {
+  width: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+
+.label1 {
+  position: relative;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 39px;
+}
+
+.buttons,
+.locationFilter {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+
+.buttons {
+  cursor: pointer;
+  border: 0.8px solid var(--grey-grey-dark);
+  padding: var(--padding-2xs) var(--padding-mini);
+  background-color: var(--white);
+  height: 42px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationFilter {
+  margin: 0;
+  align-self: stretch;
+  height: 66px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.leadingIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+}
+
+.vuesaxlinearsmsIcon {
+  height: 21px;
+  width: 21px;
+  position: relative;
+}
+
+.email {
+  position: relative;
+  line-height: 24px;
+}
+
+.leadingIcon1 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  display: none;
+}
+
+.label2,
+.number {
+  position: relative;
+  line-height: 16px;
+  align-items: center;
+}
+
+.label2 {
+  height: 16px;
+  width: 29px;
+  font-weight: 500;
+  display: flex;
+}
+
+.number {
+  width: 24px;
+  display: none;
+  flex-shrink: 0;
+}
+
+.trailingIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+
+.chip {
+  border-radius: var(--br-20xl);
+  background-color: var(--grey-light-200);
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-9xs);
+}
+
+.div {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.chips {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lgi) 0 0;
+  gap: var(--gap-5xs);
+  font-size: var(--text-small-12-bold-size);
+  color: var(--black);
+}
+
+.container1,
+.fieldText1 {
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 31px);
+}
+
+.fieldText1 {
+  height: 44px;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm) var(--padding-sm);
+  gap: var(--gap-3xs);
+  max-width: 100%;
+}
+
+.filterElements {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-9xs);
+  min-width: 700px;
+}
+
+.filterElements,
+.formContainer,
+.searchFilters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.searchFilters {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-2xl);
+  font-size: var(--text-medium-16-medium-size);
+  font-family: var(--text-medium-16-medium);
+}
+
+.formContainer {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 659px);
+  background-color: var(--grey-200);
+  width: 1279px;
+  flex-direction: column;
+  padding: var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--title-r-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputContainer input {
+  height: 30px;
+}
+
+@media screen and (max-width: 1225px) {
+  .locationFilter {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .filterElements {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .luxuryVacationRentals {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .luxuryVacationRentals {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+
+  .locationFilter {
+    height: auto;
+  }
+
+  .chips {
+    flex-wrap: wrap;
+  }
+
+  .container1,
+  .fieldText1 {
+    height: auto;
+  }
+}

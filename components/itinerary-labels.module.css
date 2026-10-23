@@ -1,0 +1,87 @@
+.groupIcon,
+.itineraryLabelsChild,
+.itineraryLabelsInner,
+.itineraryLabelsItem {
+  position: absolute;
+  top: 271px;
+  left: 287px;
+  width: 338px;
+  height: 192px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.groupIcon,
+.itineraryLabelsInner,
+.itineraryLabelsItem {
+  top: 39px;
+  left: 406px;
+}
+.groupIcon,
+.itineraryLabelsInner {
+  top: 0;
+  left: 0;
+  width: 332.8px;
+  height: 322px;
+}
+.groupIcon {
+  top: 20px;
+  left: 789px;
+}
+.helicopter,
+.jetRental,
+.personalizedItineraries {
+  position: absolute;
+  line-height: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.personalizedItineraries {
+  top: 339px;
+  left: 2px;
+  display: inline-block;
+  width: 183px;
+}
+.helicopter,
+.jetRental {
+  top: 363px;
+  left: 789px;
+}
+.jetRental {
+  top: 475px;
+  left: 285px;
+}
+.yatch {
+  margin: 0;
+}
+.yatchRental {
+  position: absolute;
+  top: 246px;
+  left: 652px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--sand);
+  display: inline-block;
+  width: 112px;
+  cursor: pointer;
+}
+.itineraryLabels {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 82px;
+  width: 1121.8px;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 450px) {
+  .helicopter,
+  .jetRental,
+  .personalizedItineraries,
+  .yatchRental {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+}

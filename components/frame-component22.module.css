@@ -1,0 +1,128 @@
+.keyFeatures {
+  margin: 0;
+  height: 54px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.lI6Engine {
+  margin-bottom: 16px;
+}
+.lI6Engine8SpdWodTransm {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.lI6EngineContainer {
+  display: inline-block;
+  max-width: 100%;
+}
+.driverAndPassengerContainer,
+.lI6EngineContainer,
+.label {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+}
+.label {
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 75px;
+}
+.vectorIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-aqua-100);
+  width: 155px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.buttons:hover {
+  background-color: var(--color-lightseagreen-200);
+}
+.driverAndPassengerLumbarSuParent,
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+}
+.featuresList {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+}
+.featuresContent,
+.featuresContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.featuresContent {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-5xl);
+}
+.featuresContentWrapper {
+  position: absolute;
+  top: 1746px;
+  left: calc(50% - 720px);
+  background-color: var(--grey-200);
+  width: 100%;
+  align-items: flex-start;
+  padding: var(--padding-37xl) var(--padding-61xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--title-xr-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1050px) {
+  .keyFeatures {
+    font-size: var(--font-size-7xl);
+    line-height: 25px;
+  }
+  .featuresContentWrapper {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .keyFeatures {
+    font-size: var(--font-size-lgi);
+    line-height: 18px;
+  }
+  .driverAndPassengerLumbarSuParent {
+    gap: var(--gap-xl);
+  }
+}

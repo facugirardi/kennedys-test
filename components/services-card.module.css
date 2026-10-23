@@ -1,0 +1,65 @@
+.servicesCardChild {
+  align-self: stretch;
+  height: 240px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+.vuesaxlinearheartWrapper {
+  margin: 0 !important;
+  position: absolute;
+  top: 37px;
+  right: 36.3px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  z-index: 1;
+}
+.title {
+  align-self: stretch;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.ourConciergeServices {
+  width: 385px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  z-index: 3;
+}
+.viewMore {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text-s-light-size);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+  color: var(--sand);
+  z-index: 4;
+}
+.servicesCard {
+  flex: 1;
+  background-color: var(--white);
+  border: 1px solid var(--grey-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-5xl);
+  position: relative;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}

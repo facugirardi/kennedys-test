@@ -1,0 +1,48 @@
+.iconCheck {
+  width: 16px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  height: 16px;
+  display: none;
+}
+.check {
+  width: 20px;
+  border-radius: var(--br-11xs);
+  border: 1px solid var(--black);
+  box-sizing: border-box;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-12xs) var(--padding-11xs);
+}
+.check,
+.checkbox,
+.container,
+.label {
+  display: flex;
+  align-items: center;
+}
+.label {
+  width: 85px;
+  position: relative;
+  line-height: 16px;
+}
+.checkbox,
+.container {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.container {
+  flex: 1;
+  gap: var(--gap-5xs);
+}
+.checkbox {
+  width: 229px;
+  height: 20px;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--black);
+  font-family: var(--text-normal-14-regular);
+}

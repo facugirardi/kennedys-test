@@ -1,0 +1,115 @@
+.similarVillas {
+  margin: 0;
+  width: 329px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.vuesaxlineararchiveTickIcon {
+  width: 16.9px;
+  position: relative;
+  height: 16.9px;
+}
+.vuesaxlineararchiveTick {
+  box-shadow: -4.9px 7px 21.1px #dbddde;
+  border-radius: var(--br-16xl-2);
+  background-color: var(--white);
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-7);
+}
+.villasGrid {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.label {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 119px;
+}
+.vectorIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons,
+.similarVillasParent {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-aqua-100);
+  width: 194px;
+  height: 52px;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.buttons:hover {
+  background-color: var(--color-lightseagreen-200);
+}
+.similarVillasParent {
+  position: absolute;
+  top: 7594px;
+  left: 0;
+  background-color: var(--grey-200);
+  width: 1442px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-45xl) 0;
+  gap: var(--gap-11xl);
+  text-align: center;
+  font-size: var(--title-m-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1300px) {
+  .villasGrid {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(308px, 535px));
+  }
+}
+@media screen and (max-width: 800px) {
+  .similarVillas {
+    font-size: var(--font-size-18xl);
+    line-height: 35px;
+  }
+  .villasGrid {
+    grid-template-columns: minmax(308px, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .similarVillas {
+    font-size: var(--title-s-size);
+    line-height: 26px;
+  }
+}

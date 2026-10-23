@@ -1,0 +1,44 @@
+.imageIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.title {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bottom,
+.card {
+  display: flex;
+  justify-content: flex-start;
+}
+.bottom {
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  gap: var(--gap-5xs);
+}
+.card {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--white);
+  border: 0.5px solid var(--grey-grey);
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}

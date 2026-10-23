@@ -1,0 +1,112 @@
+.chaufferInRange {
+  margin: 0;
+  height: 54px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.vuesaxlinearheartIcon {
+  height: 26px;
+  width: 26px;
+  position: relative;
+}
+.save {
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  display: inline-block;
+  min-width: 34px;
+}
+.saveButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.share {
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  display: inline-block;
+  min-width: 41px;
+}
+.shareButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.actionButtons,
+.chaufferInRangeRoverParent {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.actionButtons {
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+}
+.chaufferInRangeRoverParent {
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.the2020Land {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+  max-width: 100%;
+}
+.frameParent,
+.roverDescription {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.roverDescription {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-size: var(--text-medium-16-medium-size);
+}
+.frameParent {
+  position: absolute;
+  top: 811px;
+  left: 85px;
+  width: 1275px;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: var(--title-r-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1050px) {
+  .chaufferInRange {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .chaufferInRange {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .chaufferInRangeRoverParent {
+    flex-wrap: wrap;
+  }
+}

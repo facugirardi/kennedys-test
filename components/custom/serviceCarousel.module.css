@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.item {
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.imageContainer {
+  position: relative;
+  height: 16rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.serviceTitle {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 9999px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.navButton:hover {
+  background-color: #f7fafc;
+}
+
+.prevButton {
+  composes: navButton;
+  left: -2rem;
+}
+
+.nextButton {
+  composes: navButton;
+  right: -2rem;
+}
+
+.contactContainer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0BC5EA;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 0px;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background-color: #00B5D8;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageContainer {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .track {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .imageContainer {
+    height: 10rem;
+  }
+}

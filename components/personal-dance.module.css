@@ -1,0 +1,54 @@
+.personalDanceWrapper {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.personal {
+  margin: 0;
+}
+.personalDanceLessonsContainer {
+  width: 235px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.personalDanceBottomWrapper {
+  width: 149px;
+  align-items: flex-start;
+}
+.bottom,
+.personalDanceBottomWrapper,
+.personalDanceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bottom {
+  align-self: stretch;
+  align-items: flex-end;
+}
+.personalDanceContainer {
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 390px;
+  align-items: flex-start;
+  gap: var(--gap-2xs);
+}
+.personalDance {
+  position: absolute;
+  top: 24px;
+  left: 372px;
+  width: 436px;
+  height: 359px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--sand);
+  font-family: var(--font-gt-super-txt-trial);
+}

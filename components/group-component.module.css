@@ -1,0 +1,74 @@
+.eventTypeImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 409px;
+  height: 331px;
+  object-fit: cover;
+}
+.private {
+  margin: 0;
+}
+.experienceExclusivityAs,
+.privateEvents {
+  position: absolute;
+  letter-spacing: 0.01em;
+  display: inline-block;
+}
+.privateEvents {
+  margin: 0;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 400;
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+}
+.experienceExclusivityAs {
+  top: 5px;
+  left: 112px;
+  font-size: var(--text-s-light-size);
+  line-height: 20px;
+  width: 225.4px;
+  height: 80px;
+}
+.eventTypeIcons {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 97px;
+  height: 0;
+}
+.privateEventsParent {
+  position: absolute;
+  top: 349px;
+  left: 10px;
+  width: 353.6px;
+  height: 103.3px;
+}
+.eventTypeImageParent {
+  position: absolute;
+  top: 3831px;
+  left: 88px;
+  width: 409px;
+  height: 452.3px;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 750px) {
+  .privateEvents {
+    font-size: var(--title-xs-size);
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .privateEvents {
+    font-size: var(--font-size-lg);
+    line-height: 18px;
+  }
+}

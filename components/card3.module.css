@@ -1,0 +1,91 @@
+.imageCardIcon {
+  align-self: stretch;
+  height: 240px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.title {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  line-height: 32px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.title1,
+.title2 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  color: var(--color-darkslategray-100);
+}
+.title2 {
+  color: var(--sand);
+  white-space: pre-wrap;
+}
+.capa1Icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 7.6px;
+  height: 12px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.title3 {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+}
+.capa1Parent {
+  align-self: stretch;
+  height: 30.7px;
+  position: relative;
+}
+.frameWrapper {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 var(--padding-5xl) 0 0;
+}
+.card,
+.frameWrapper,
+.titleParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.titleParent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  align-items: center;
+  padding: var(--padding-3xl) var(--padding-4xl);
+  gap: var(--gap-9xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .title {
+    font-size: var(--title-xs-size);
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+}

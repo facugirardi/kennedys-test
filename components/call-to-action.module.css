@@ -1,0 +1,9 @@
+.callToAction {
+  height: 97px;
+  width: 117px;
+  position: relative;
+  text-align: center;
+  font-size: var(--text-s-light-size);
+  color: var(--white);
+  font-family: var(--text-s-light);
+}

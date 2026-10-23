@@ -1,0 +1,149 @@
+.luxuryExperience {
+  width: 192.2px;
+  height: 44px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.providingCuratedAccommodatio {
+  width: 200px;
+  height: 99px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  color: var(--grey-black);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.valuesList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  width: 255.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+}
+.exceptionalHospitality {
+  width: 236.7px;
+  height: 44px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.valuesList1 {
+  position: absolute;
+  top: 0;
+  left: 277.9px;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  width: 255.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+}
+.authenticity {
+  margin: 0;
+}
+.authenticityAndIntegrityContainer {
+  width: 225.4px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.valuesList2 {
+  position: absolute;
+  top: 0;
+  left: 553.8px;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  width: 255.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+}
+.exclusivityAndPrivacyContainer {
+  width: 223px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.valuesList3 {
+  position: absolute;
+  top: 0;
+  left: 831.7px;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  width: 255.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+}
+.valuesListParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 205px;
+}
+.groupParent,
+.valuesListIcon,
+.valuesListIcon1,
+.valuesListIcon2 {
+  position: absolute;
+  top: 32.5px;
+  left: 276px;
+  width: 0.5px;
+  height: 178px;
+}
+.groupParent,
+.valuesListIcon1,
+.valuesListIcon2 {
+  left: 552.8px;
+}
+.groupParent,
+.valuesListIcon2 {
+  left: 823px;
+}
+.groupParent {
+  top: 446px;
+  left: 92px;
+  width: 1087px;
+  height: 210.5px;
+  text-align: center;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 450px) {
+  .authenticityAndIntegrityContainer,
+  .exceptionalHospitality,
+  .exclusivityAndPrivacyContainer,
+  .luxuryExperience {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+}

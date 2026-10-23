@@ -1,0 +1,101 @@
+.calendar {
+  width: 100%;
+  max-width: 450px;
+  /* background: white; */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.monthYear {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--grey-grey-dark);
+}
+
+.navButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 8px;
+  color: var(--grey-grey-dark);
+}
+
+.navButton:hover {
+  color: var(--orange-500);
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.weekdays div {
+  color: var(--grey-grey-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #000;
+  transition: all 0.2s ease;
+
+}
+
+/* .day:hover {
+  background-color: #ff6c00;
+  color: #000;
+} */
+
+.dayNumber {
+  display: flex;
+  width: 50%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #000;
+  transition: all 0.2sease;
+}
+
+.dayNumber:hover {
+  background-color: #ff6c00;
+  color: #000;
+}
+
+.selected {
+  background-color: #ff6c00 !important;
+  color: #000 !important;
+}
+
+.blank {
+  aspect-ratio: 1;
+}

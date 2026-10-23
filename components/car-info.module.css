@@ -1,0 +1,76 @@
+.moreInfo {
+  position: absolute;
+  top: 319px;
+  left: 152.3px;
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  display: inline-block;
+  width: 123px;
+}
+.carInfoChild {
+  position: absolute;
+  top: 314px;
+  left: calc(50% - 132.4px);
+  width: 270px;
+  height: 0;
+}
+.carDetailsChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 271px;
+  height: 241px;
+  object-fit: cover;
+}
+.vuesaxlinearheartIcon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+}
+.vuesaxlinearheartWrapper {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+.wranglerJeep {
+  position: absolute;
+  top: 271px;
+  left: 6.1px;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 260px;
+}
+.carDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 293px;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+}
+.carInfo {
+  height: 343px;
+  width: 275.4px;
+  position: relative;
+  text-align: right;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 750px) {
+  .wranglerJeep {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+}

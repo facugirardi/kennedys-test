@@ -1,0 +1,55 @@
+.row {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 var(--padding-85xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+  height: 100%;
+}
+.villaGrid {
+  align-self: stretch;
+  height: 511px;
+  position: relative;
+  max-width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .row {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(304px, 527px));
+  }
+}
+@media screen and (max-width: 1050px) {
+  .row {
+    padding-left: var(--padding-33xl);
+    padding-right: var(--padding-33xl);
+    box-sizing: border-box;
+    grid-template-columns: minmax(304px, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .row {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .villaGrid {
+    height: auto;
+    min-height: 511;
+  }
+}

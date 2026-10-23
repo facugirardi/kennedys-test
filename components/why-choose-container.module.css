@@ -1,0 +1,239 @@
+.whyChooseOur {
+  margin: 0;
+  width: 474px;
+  height: 54px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.ourConciergeServices {
+  position: relative;
+  font-size: var(--title-xxs-size);
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+.whyChooseOurServicesParent {
+  width: 889px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.cardContainersChild {
+  align-self: stretch;
+  height: 304px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.persoinalizedService {
+  width: 238px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.tailoredExperiencesTo {
+  width: 288px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--grey-black);
+  display: inline-block;
+}
+.cardContainers {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 1;
+}
+.cardContainersItem {
+  align-self: stretch;
+  height: 186px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.availability {
+  width: 326px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  max-width: 100%;
+}
+.dedicatedConciergeSupport {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--grey-black);
+}
+.cardContainers1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-197xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-smi);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 2;
+  margin-left: -40px;
+}
+.exclusiveAccessCardChild {
+  align-self: stretch;
+  height: 180px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.exclusiveAccess {
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.accessDescription,
+.exclusiveAccessCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.accessDescription {
+  align-self: stretch;
+  padding: 0 var(--padding-45xl);
+  gap: var(--gap-5xs);
+}
+.exclusiveAccessCard {
+  flex: 1;
+  gap: var(--gap-6xs);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 3;
+  margin-left: -40px;
+  color: var(--sand);
+}
+.cardContainersInner {
+  align-self: stretch;
+  height: 203px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.effortlessCoordination {
+  width: 276px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.cardContainers2 {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-109xl) 0 0;
+  gap: var(--gap-xs);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 4;
+  margin-left: -40px;
+}
+.benefitCards,
+.cardContainers2,
+.whyChooseContainer {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.benefitCards {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 var(--padding-61xl);
+  max-width: 100%;
+  row-gap: 20px;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+}
+.whyChooseContainer {
+  position: absolute;
+  top: 3548px;
+  left: 0;
+  background-color: var(--grey-200);
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-45xl) 0;
+  gap: var(--gap-26xl);
+  text-align: center;
+  font-size: var(--title-r-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .whyChooseOur {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+  .ourConciergeServices {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 26px;
+  }
+  .availability,
+  .exclusiveAccess,
+  .persoinalizedService {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+  .accessDescription {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .effortlessCoordination {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .whyChooseOur {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+  .benefitCards {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+  .whyChooseContainer {
+    gap: var(--gap-3xl);
+  }
+}

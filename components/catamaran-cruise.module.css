@@ -1,0 +1,42 @@
+.catamaranCruiseContainer {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.fiveHourCruiseIn {
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+}
+.bottom,
+.catamaranCruise,
+.catamaranCruiseBottomWrappe {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bottom,
+.catamaranCruise {
+  width: 309px;
+}
+.catamaranCruise {
+  position: absolute;
+  top: 0;
+  left: 805px;
+  width: 343px;
+  padding: 0 var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--grey-black);
+  font-family: var(--font-gt-super-txt-trial);
+}

@@ -1,0 +1,204 @@
+.otherChaufferOptions {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 332.4px);
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 661px;
+  height: 64px;
+}
+.vectorIcon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 0;
+}
+.vectorWrapper {
+  position: absolute;
+  top: 19.2px;
+  left: 22.4px;
+  width: 4.8px;
+  height: 10.4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 var(--padding-5xs) var(--padding-5xs);
+  box-sizing: border-box;
+}
+.circle,
+.frameParent,
+.groupChild {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.circle {
+  left: 0;
+  border-radius: 50%;
+  border: 0 solid var(--grey-black);
+  box-sizing: border-box;
+  width: 100%;
+}
+.frameParent,
+.groupChild {
+  bottom: 0;
+  left: 1232px;
+  width: 48.8px;
+}
+.groupChild {
+  left: 0;
+  max-height: 100%;
+  object-fit: contain;
+}
+.groupParent {
+  position: absolute;
+  top: 102px;
+  left: 0;
+  width: 1280.8px;
+  height: 48.8px;
+}
+.cardImageIcon {
+  position: absolute;
+  top: 314px;
+  left: calc(50% - 135.5px);
+  width: 270px;
+  height: 0.5px;
+  object-fit: contain;
+}
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 271px;
+  height: 241px;
+  object-fit: cover;
+}
+.vuesaxlinearheartIcon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+}
+.vuesaxlinearheartWrapper {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+.audiA3,
+.moreInfo {
+  position: absolute;
+  display: inline-block;
+}
+.audiA3 {
+  top: 271px;
+  left: 6px;
+  line-height: 22px;
+  text-transform: uppercase;
+  width: 260px;
+}
+.moreInfo {
+  top: 319px;
+  left: 146px;
+  font-size: var(--text-s-light-size);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  color: var(--grey-black);
+  text-align: right;
+  width: 123px;
+}
+.cardImageParent {
+  height: 343px;
+  width: 271px;
+  position: relative;
+}
+.carOptions {
+  top: 0;
+  left: calc(50% - 575.4px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-lg);
+}
+.carOptions,
+.other,
+.slider {
+  position: absolute;
+}
+.slider {
+  top: 72px;
+  left: calc(50% - 640.4px);
+  width: 100%;
+  height: 363px;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+}
+.other {
+  top: 2252px;
+  left: 82px;
+  width: 1280.8px;
+  height: 435px;
+  text-align: center;
+  font-size: var(--title-r-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .carOptions {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(207px, 359px));
+  }
+}
+@media screen and (max-width: 1050px) {
+  .otherChaufferOptions {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .otherChaufferOptions {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+  .audiA3 {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+  .carOptions {
+    grid-template-columns: minmax(207px, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .other,
+  .slider {
+    height: auto;
+    min-height: 363;
+  }
+  .other {
+    min-height: 435;
+  }
+}

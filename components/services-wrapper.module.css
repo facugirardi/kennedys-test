@@ -1,0 +1,93 @@
+.servicesWrapperChild {
+  position: absolute;
+  top: 126px;
+  left: calc(50% - 740px);
+  background-color: var(--color-antiquewhite-100);
+  width: 1482px;
+  height: 420px;
+}
+.personalizedItinerariesAnd {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+}
+.experienceLuxuryAt {
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+.star6StarAnd {
+  letter-spacing: 0.01em;
+  font-family: var(--text-s-light);
+}
+.eachOfferingA {
+  letter-spacing: 0.02em;
+}
+.star6StarAnd7StarPacka {
+  margin: 0;
+}
+.experienceLuxuryAtContainer {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  line-height: 140%;
+}
+.personalizedItineraries {
+  position: absolute;
+  top: calc(50% - 50.5px);
+  left: 954px;
+  width: 402px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.servicesWrapperItem {
+  position: absolute;
+  top: 126px;
+  left: 95px;
+  width: 386px;
+  height: 195px;
+  object-fit: cover;
+}
+.rectangleIcon,
+.servicesWrapperInner {
+  position: absolute;
+  top: 208px;
+  left: 416px;
+  width: 500px;
+  height: 258px;
+  object-fit: cover;
+}
+.rectangleIcon {
+  top: 355px;
+  left: 78px;
+  width: 414px;
+  height: 191px;
+}
+.servicesWrapper {
+  position: absolute;
+  top: -126px;
+  left: calc(50% - 721px);
+  width: 100%;
+  height: 588px;
+  text-align: left;
+  font-size: var(--title-r-size);
+  color: var(--black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .personalizedItinerariesAnd {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .personalizedItinerariesAnd {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+}

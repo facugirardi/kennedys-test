@@ -1,0 +1,204 @@
+.contactButtonLabels {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-9xs);
+}
+
+.vuesaxlinearsmsIcon {
+  width: 19px;
+  position: relative;
+  height: 19px;
+}
+
+.contact {
+  width: 54px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+}
+
+.button1,
+.topMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+}
+
+.topMenu {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+
+.concierge1,
+.events1,
+.realEstate1,
+.vacationRentals {
+  width: 126px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.concierge,
+.events,
+.realEstate {
+  width: 74px;
+}
+
+.events,
+.realEstate {
+  width: 48px;
+}
+
+.realEstate {
+  width: 80px;
+}
+
+/* .servicesDropdown {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+} */
+
+.services {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+
+.capa1Icon {
+  height: 27px;
+  width: 309px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logIn1,
+.weManageYour {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+}
+
+.weManageYour {
+  width: 158px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logIn1 {
+  width: 38px;
+  font-size: var(--text-s-light-size);
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: right;
+}
+
+.logIn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs) var(--padding-5xl);
+  background-color: var(--sand);
+  border-radius: var(--br-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.imageIcon {
+  height: 43px;
+  width: 43px;
+  position: relative;
+  border-radius: var(--br-9xl);
+  object-fit: cover;
+}
+
+.image {
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+
+.image,
+.navFinal,
+.right,
+.topNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  justify-content: flex-end;
+  gap: var(--gap-base);
+}
+
+.navFinal,
+.topNav {
+  width: 100%;
+  justify-content: space-between;
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+}
+
+.navFinal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  border-top: 8px solid var(--sand);
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-9xl) var(--padding-41xl) var(--padding-5xl);
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+
+.a {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  color: inherit;
+  text-decoration: none;
+}

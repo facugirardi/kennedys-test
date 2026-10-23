@@ -1,0 +1,111 @@
+.newsDetailBackground {
+  align-self: stretch;
+  height: 260px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.title {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 120%;
+}
+.newsDetailIcon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 0;
+}
+.groupChild,
+.newsDetailIconWrapper {
+  position: absolute;
+  box-sizing: border-box;
+}
+.newsDetailIconWrapper {
+  top: 19.2px;
+  left: 22.4px;
+  width: 4.8px;
+  height: 10.4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 var(--padding-5xs) var(--padding-5xs);
+}
+.groupChild {
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 0 solid var(--grey-black);
+  width: 100%;
+  height: 100%;
+}
+.frameParent {
+  height: 48.8px;
+  width: 48.8px;
+  position: relative;
+}
+.titleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.heading,
+.newsDetailBackgroundParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.heading {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: var(--padding-base);
+}
+.newsDetailBackgroundParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.newsDetails {
+  height: 340.8px;
+  width: 400px;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .title {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .titleParent {
+    flex-wrap: wrap;
+  }
+  .newsDetails {
+    height: auto;
+    min-height: 340.8;
+  }
+}

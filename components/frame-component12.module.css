@@ -1,0 +1,161 @@
+.bedrooms {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.empty {
+  position: relative;
+  line-height: 24px;
+}
+.container,
+.fieldText {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container {
+  height: 14px;
+  justify-content: space-between;
+  gap: var(--gap-0);
+  row-gap: 20px;
+}
+.fieldText {
+  align-self: stretch;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm)
+    var(--padding-sm);
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-medium-16-medium);
+}
+.labelParent {
+  width: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.label1 {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 127px;
+}
+.buttonIconList {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl) 0 var(--padding-6xl);
+  background-color: var(--turquoise);
+  height: 44px;
+  width: 194px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.buttons:hover {
+  background-color: var(--color-lightseagreen-100);
+}
+.label2 {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  display: inline-block;
+  min-width: 39px;
+}
+.buttons1 {
+  background-color: var(--grey-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs) var(--padding-xs);
+  gap: var(--gap-5xs);
+  cursor: pointer;
+}
+.buttonsParent,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.buttonsParent {
+  justify-content: flex-end;
+  gap: var(--gap-2xs);
+  text-align: center;
+}
+.frameParent {
+  align-self: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  gap: var(--gap-lg);
+  max-width: 100%;
+}
+.frameContainer {
+  flex: 1;
+  flex-direction: column;
+}
+.frameContainer,
+.frameWrapper,
+.kennedysVillasListInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+}
+.kennedysVillasListInner {
+  position: absolute;
+  top: 165px;
+  left: calc(50% - 720px);
+  box-shadow: 0 4px 32.4px #f0f3f5;
+  background-color: var(--white);
+  width: 100%;
+  flex-direction: column;
+  padding: var(--padding-base) var(--padding-61xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .kennedysVillasListInner {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .buttonsParent {
+    flex-wrap: wrap;
+  }
+}

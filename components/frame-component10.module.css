@@ -1,0 +1,378 @@
+.teresa {
+  width: 675px;
+  position: relative;
+  font-size: var(--font-size-81xl);
+  letter-spacing: -0.04em;
+  line-height: 88%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.aLuxuryVilla,
+.teresa {
+  margin: 0;
+}
+
+.aLuxuryVilla,
+.locatedInOne {
+  line-height: 140%;
+}
+
+.magical {
+  line-height: 24px;
+}
+
+.locatedInOneOfThePrimmest {
+  margin: 0;
+}
+
+.aLuxuryVillaContainer,
+.save {
+  position: relative;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.aLuxuryVillaContainer {
+  width: 743.4px;
+  max-width: 100%;
+}
+
+.save {
+  line-height: 140%;
+  min-width: 34px;
+}
+
+.vuesaxlinearheartParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+
+.share {
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  display: inline-block;
+  min-width: 41px;
+}
+
+.heroActions,
+.vuesaxlinearhierarchy2Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heroActions {
+  gap: var(--gap-base);
+}
+
+.label {
+  width: 118px;
+  position: relative;
+  font-size: var(--text-s-light-size);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+  text-align: center;
+  display: inline-block;
+}
+
+.heroContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-5xl);
+  min-width: 496px;
+  max-width: 100%;
+}
+
+.checkAvailability,
+.label1 {
+  position: relative;
+  font-family: var(--text-s-light);
+  display: inline-block;
+}
+
+.checkAvailability {
+  margin: 0;
+  font-size: var(--title-r-size);
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  color: var(--grey-grey-dark);
+  text-align: left;
+  max-width: 100%;
+}
+
+.label1 {
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  color: var(--grey-black);
+  text-align: center;
+  min-width: 39px;
+}
+
+.buttons {
+  background-color: var(--grey-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+  gap: var(--gap-5xs);
+  cursor: pointer;
+}
+
+.checkAvailabilityParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+  max-width: 100%;
+}
+
+.villa {
+  position: relative;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: left;
+}
+
+.label2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.leadingIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+}
+
+.container,
+.fieldText {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 25px;
+  flex: 1;
+  flex-direction: column;
+  padding: 0;
+  font-family: var(--text-s-light);
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--black);
+}
+
+.fieldText {
+  align-self: stretch;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm) var(--padding-sm);
+  gap: var(--gap-3xs);
+}
+
+.bookingFormLabels,
+.bookingFormLabels1 {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bookingFormLabels {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+  flex: 1;
+}
+
+.bookingFormLabels1 {
+  height: 66px;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-sm);
+}
+
+.bookingFormFields,
+.bookingFormFieldsWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.bookingFormFields {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+
+.bookingFormFieldsWrapper {
+  align-self: stretch;
+  flex-direction: row;
+}
+
+.label3 {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 84px;
+}
+
+.searchIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+
+.buttons1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-aqua-100);
+  align-self: stretch;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+
+.availabilityContent,
+.heroContentParent {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.availabilityContent {
+  margin: 0;
+  box-shadow: 0 4px 32.4px #f0f3f5;
+  background-color: var(--white);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-13xl);
+  gap: var(--gap-base);
+  min-width: 517px;
+}
+
+.heroContentParent {
+  position: absolute;
+  top: 177px;
+  left: -2px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-61xl);
+  row-gap: 20px;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--white);
+  font-family: var(--text-s-light);
+  justify-content: end;
+}
+
+@media screen and (max-width: 1225px) {
+
+  .availabilityContent,
+  .heroContent {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .teresa {
+    font-size: var(--font-size-31xl);
+    line-height: 53px;
+  }
+
+  .checkAvailability {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+
+  .checkAvailabilityParent {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .bookingFormLabels1 {
+    height: auto;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .heroContentParent {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .teresa {
+    font-size: var(--font-size-11xl);
+    line-height: 35px;
+  }
+
+  .heroActions {
+    flex-wrap: wrap;
+  }
+
+  .checkAvailability {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .availabilityContent {
+    flex: 1;
+  }
+
+  .heroContentParent {
+    flex-wrap: wrap;
+  }
+}

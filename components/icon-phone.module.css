@@ -1,0 +1,7 @@
+.iconPhone {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}

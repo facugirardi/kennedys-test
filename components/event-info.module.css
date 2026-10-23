@@ -1,0 +1,63 @@
+.otherEventsChild {
+  background-color: var(--grey-200);
+}
+.otherEvents,
+.otherEventsChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.othersEvents,
+.viewAll {
+  position: absolute;
+  display: inline-block;
+}
+.othersEvents {
+  margin: 0;
+  top: 45px;
+  left: calc(50% - 576px);
+  font-size: var(--title-r-size);
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: center;
+  width: 1152px;
+  height: 46px;
+}
+.viewAll {
+  text-decoration: underline;
+  top: 69px;
+  left: calc(50% + 588px);
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.01em;
+  line-height: 18px;
+  color: inherit;
+  text-align: right;
+  min-width: 47px;
+}
+.eventInfo {
+  position: absolute;
+  top: 3825px;
+  left: 0;
+  width: 100%;
+  height: 598px;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 750px) {
+  .othersEvents {
+    font-size: var(--title-xr-size);
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .othersEvents {
+    font-size: var(--title-xs-size);
+    line-height: 23px;
+  }
+}

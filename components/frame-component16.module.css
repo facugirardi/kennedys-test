@@ -1,0 +1,211 @@
+.eventTypeColumnsChild {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 635px;
+  height: 364px;
+  object-fit: cover;
+}
+.theresNoOneSizeFitsAll {
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.moreInfo {
+  margin: 0;
+  font-size: var(--text-s-light-size);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+}
+.theresNoOneSizeFitsAllContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.firstEventTypeContent {
+  position: absolute;
+  top: 176px;
+  left: 677px;
+  width: 467px;
+  height: 188px;
+}
+.wedding {
+  margin: 0;
+  position: absolute;
+  top: 72px;
+  left: calc(50% - 47px);
+  font-size: var(--font-size-41xl);
+  line-height: 86%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--sand);
+  display: inline-block;
+  width: 353px;
+  height: 120px;
+}
+.contentIcon {
+  position: absolute;
+  top: 135px;
+  left: calc(50% + 63.5px);
+  width: 542.5px;
+  height: 0;
+}
+.eventTypeColumns,
+.miceImagePlaceholder {
+  position: absolute;
+  top: 0;
+  left: 41px;
+  width: 1212px;
+  height: 404px;
+}
+.miceImagePlaceholder {
+  left: 569px;
+  width: 635px;
+  height: 364px;
+  object-fit: cover;
+}
+.miceIcon {
+  position: absolute;
+  top: 146px;
+  left: calc(50% - 602px);
+  width: 542.5px;
+  height: 0;
+}
+.corporateEventContent {
+  position: absolute;
+  top: 191px;
+  left: 4px;
+  width: 467px;
+  height: 188px;
+}
+.mice {
+  margin: 0;
+}
+.miceAndIncentivesContainer {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 608px);
+  font-size: var(--font-size-41xl);
+  line-height: 86%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--grey-grey-dark);
+  display: inline-block;
+  width: 499px;
+  height: 130px;
+}
+.contentIcon1 {
+  position: absolute;
+  top: 95px;
+  left: calc(50% + 65.5px);
+  width: 542.5px;
+  height: 0;
+}
+.corporateEventImage {
+  position: absolute;
+  top: 464px;
+  left: 37px;
+  width: 1216px;
+  height: 379px;
+}
+.eventTypeColumnsItem {
+  position: absolute;
+  top: 34px;
+  left: 541px;
+  background-color: var(--white);
+  width: 159px;
+  height: 100px;
+}
+.christenings {
+  margin: 0;
+  position: absolute;
+  top: 72px;
+  left: calc(50% - 47px);
+  font-size: var(--font-size-41xl);
+  line-height: 86%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--sand);
+  display: inline-block;
+  width: 641px;
+}
+.eventTypeColumns1 {
+  position: absolute;
+  top: 851px;
+  left: 41px;
+  width: 1212px;
+  height: 404px;
+}
+.themesIcon {
+  position: absolute;
+  top: 95px;
+  left: calc(50% - 596px);
+  width: 542.5px;
+  height: 0;
+}
+.themedPartyContent {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 511px;
+  height: 244px;
+}
+.themesParty {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 602px);
+  font-size: var(--font-size-41xl);
+  line-height: 86%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--grey-grey-dark);
+  display: inline-block;
+  width: 499px;
+}
+.themedPartyImage {
+  position: absolute;
+  top: 1315px;
+  left: 39px;
+  width: 1204px;
+  height: 384px;
+}
+.eventTypeColumnsParent {
+  position: absolute;
+  top: 932px;
+  left: 80px;
+  width: 1281px;
+  height: 1699px;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--color-darkslategray-100);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .christenings,
+  .miceAndIncentivesContainer,
+  .themesParty,
+  .wedding {
+    font-size: var(--font-size-17xl);
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .christenings,
+  .miceAndIncentivesContainer,
+  .themesParty,
+  .wedding {
+    font-size: var(--font-size-29xl);
+    line-height: 41px;
+  }
+}

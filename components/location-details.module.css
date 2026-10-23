@@ -1,0 +1,59 @@
+.distances,
+.location {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+.distances {
+  left: 119px;
+  color: var(--grey-grey);
+}
+.locationElements,
+.locationElements1 {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  background-color: var(--sand);
+  width: 85px;
+  height: 3px;
+}
+.locationElements1 {
+  left: 119px;
+  background-color: var(--grey-grey);
+  width: 96px;
+}
+.calle32Sur {
+  margin: 0;
+}
+.calle32SurContainer {
+  position: absolute;
+  top: 53px;
+  left: 2px;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  color: var(--grey-black);
+  display: inline-block;
+  width: 367px;
+  height: 104px;
+}
+.locationDetails {
+  position: absolute;
+  top: 137px;
+  left: 67px;
+  width: 369px;
+  height: 157px;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--sand);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 450px) {
+  .distances,
+  .location {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 26px;
+  }
+}

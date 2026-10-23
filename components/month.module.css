@@ -1,0 +1,19 @@
+.sat {
+  width: 27px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  display: inline-block;
+}
+.month {
+  flex: 1;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--text-s-light-size);
+  color: var(--base-gray-40);
+  font-family: var(--text-s-light);
+}

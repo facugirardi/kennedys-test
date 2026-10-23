@@ -1,0 +1,50 @@
+.marketingTools {
+  height: 33px;
+  width: 749.7px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 33px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.topChild {
+  height: 8.5px;
+  width: 13.3px;
+  position: relative;
+  object-fit: contain;
+}
+.top {
+  width: 802px;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base) 0;
+  box-sizing: border-box;
+  gap: var(--gap-21xl);
+}
+.afterThePositioning {
+  width: 820px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 160%;
+}
+.questionOpen {
+  width: 882px;
+  height: 129px;
+  border-bottom: 1px solid var(--grey-grey);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) var(--padding-21xl);
+  gap: var(--gap-5xs);
+  z-index: 2;
+  text-align: left;
+  font-size: var(--title-s-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}

@@ -1,0 +1,255 @@
+.titleContainerChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 400px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.exclusive,
+.text {
+  margin: 0;
+}
+
+.text {
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.title,
+.titleContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.title {
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 111px;
+  left: 0;
+  flex-direction: row;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.titleContainer {
+  align-self: stretch;
+  flex-direction: column;
+  position: relative;
+  gap: var(--gap-5xs);
+}
+
+.general {
+  margin: 0;
+  width: 112px;
+  position: relative;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.bedrooms5Sleeps10BathsContainer {
+  width: 154px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--black);
+  display: inline-block;
+}
+
+.block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+
+.facilities1 {
+  margin: 0;
+  width: 122px;
+  position: relative;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.privateSwimmingPoolContainer {
+  width: 169px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--black);
+  display: inline-block;
+}
+
+.block1 {
+  height: 225px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+
+.fireplaceAlarmSystemContainer {
+  width: 149px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--black);
+  display: inline-block;
+}
+
+.accomodations {
+  margin: 0;
+  width: 207px;
+  position: relative;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.xDoubleBedroomsContainer {
+  width: 144px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+}
+
+.bedroomDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xl) 0 0;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--black);
+}
+
+.barbecueNearTheContainer,
+.enjoy {
+  position: relative;
+  display: inline-block;
+}
+
+.enjoy {
+  margin: 0;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  min-width: 72px;
+}
+
+.barbecueNearTheContainer {
+  width: 151px;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  color: var(--black);
+}
+
+.propertyDetails,
+.row {
+  display: flex;
+  max-width: 100%;
+}
+
+.row {
+  width: 1293px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-59xl);
+  text-align: left;
+  font-size: var(--title-xs-size);
+  color: var(--grey-grey-dark);
+}
+
+.propertyDetails {
+  position: absolute;
+  top: 3449px;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: var(--white);
+  font-family: var(--text-s-light);
+}
+
+@media screen and (max-width: 1050px) {
+  .text {
+    font-size: var(--font-size-32xl);
+    line-height: 49px;
+  }
+
+  .row {
+    gap: var(--gap-20xl);
+  }
+
+  .propertyDetails {
+    gap: var(--gap-xl);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text {
+    font-size: var(--font-size-19xl);
+    line-height: 37px;
+  }
+
+  .accomodations,
+  .enjoy,
+  .facilities1,
+  .general {
+    font-size: var(--font-size-lgi);
+    line-height: 23px;
+  }
+
+  .row {
+    gap: var(--gap-lgi);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .row {
+    flex-wrap: wrap;
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}

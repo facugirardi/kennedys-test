@@ -1,0 +1,122 @@
+.pickedForYou,
+.viewAllVillas {
+  position: relative;
+  display: inline-block;
+}
+
+.pickedForYou {
+  margin: 0;
+  flex: 1;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  min-width: 180px;
+}
+
+.viewAllVillas {
+  font-size: var(--text-s-light-size);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  text-align: left;
+  min-width: 81px;
+  cursor: pointer;
+}
+
+.pickedHeader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 var(--padding-9xs) 0 var(--padding-61xl);
+  gap: var(--gap-0);
+  row-gap: 20px;
+}
+
+.vuesaxlineararchiveTickIcon {
+  width: 16.9px;
+  position: relative;
+  height: 16.9px;
+}
+
+.vuesaxlineararchiveTick {
+  box-shadow: -4.9px 7px 21.1px #dbddde;
+  border-radius: var(--br-16xl-2);
+  background-color: var(--white);
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-7);
+}
+
+.pickedVillas,
+.villasGrid {
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+
+.villasGrid {
+  display: grid;
+  align-self: stretch;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+}
+
+.pickedVillas {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-37xl) var(--padding-61xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--title-r-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+
+@media screen and (max-width: 1350px) {
+  .pickedHeader {
+    padding-left: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+
+  .villasGrid {
+    grid-template-columns: repeat(2, minmax(308px, 1fr));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pickedForYou {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+
+  .villasGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pickedVillas {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pickedForYou {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+}

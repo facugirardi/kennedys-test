@@ -1,0 +1,38 @@
+.topShapeParent {
+  position: absolute;
+  top: 599px;
+  right: 20px;
+  width: 26.6px;
+  height: 313px;
+}
+
+.topShapeIcon {
+  position: absolute;
+  top: 177px;
+  left: 12.3px;
+  width: 0.8px;
+  height: 108px;
+}
+
+.iconBrandFacebookColorParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-lg-9);
+}
+
+.iconBrandFacebookColor,
+.iconLinkedin {
+  width: 26.6px;
+  height: 26.6px;
+  position: relative;
+}
+
+.iconLinkedin {
+  overflow: hidden;
+  flex-shrink: 0;
+}

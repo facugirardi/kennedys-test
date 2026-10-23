@@ -1,0 +1,119 @@
+.checkIn {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+.label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.leadingIcon,
+.leadingIcon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+}
+.leadingIcon1 {
+  width: 20px;
+  height: 20px;
+}
+.label1,
+.number {
+  position: relative;
+  line-height: 16px;
+  align-items: center;
+}
+.label1 {
+  height: 16px;
+  width: 29px;
+  font-weight: 500;
+  display: flex;
+}
+.number {
+  width: 24px;
+  display: none;
+  flex-shrink: 0;
+}
+.trailingIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.chip {
+  border-radius: var(--br-20xl);
+  background-color: var(--grey-light-200);
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-9xs);
+}
+.div {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  line-height: 20px;
+  font-weight: 500;
+}
+.chips {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.container,
+.fieldText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 12px;
+  flex: 1;
+  flex-direction: column;
+}
+.fieldText {
+  align-self: stretch;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm)
+    var(--padding-sm);
+  gap: var(--gap-3xs);
+  font-size: var(--text-small-12-bold-size);
+  color: var(--black);
+  font-family: var(--text-medium-16-medium);
+}
+.labelParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  text-align: left;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 800px) {
+  .chips {
+    flex-wrap: wrap;
+  }
+  .container {
+    min-height: 12;
+  }
+  .container,
+  .fieldText {
+    height: auto;
+  }
+}

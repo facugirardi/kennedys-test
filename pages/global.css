@@ -1,0 +1,743 @@
+/*
+ * Google Fonts se cargan con <link> en pages/_document.tsx (no con @import acá):
+ * el build de producción concatena todo el CSS y las reglas @import quedan
+ * después del reset de Tailwind, por lo que el navegador las ignora.
+ */
+@font-face {
+  font-family: "GT Super Txt Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Text-Regular-Trial.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Txt Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Text-Book-Trial.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Txt Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Text-Medium-Trial.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Txt Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Text-Bold-Trial.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Ds Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Display-Regular-Trial.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Ds Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Display-Light-Trial.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Ds Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Display-Medium-Trial.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Super Ds Trial";
+  src: url("/fonts/gt-super-ds/GT-Super-Display-Bold-Trial.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue/NeueHaasDisplayRoman.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue/NeueHaasDisplayLight.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue/NeueHaasDisplayMediu.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue/NeueHaasDisplayBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue/NeueHaasDisplayThin.ttf");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue/NeueHaasDisplayXThin.ttf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  word-spacing: 0.02em;
+  font-family: var(--font-neue-haas-grotesk-display-pro), sans-serif;
+}
+
+/*
+ * Evita el scroll horizontal accidental (p. ej. el botón flotante de contacto
+ * `position: fixed` cuyo contenido se sale del borde derecho en Safari iOS).
+ * Usamos `clip` en lugar de `hidden` para no romper `position: sticky`.
+ */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* Durante la captura de PDF se renderiza a un ancho fijo: no recortar horizontalmente. */
+html[data-pdf-capture-prep='true'],
+html[data-pdf-capture-prep='true'] body {
+  overflow-x: visible;
+}
+:root {
+  /* fonts */
+  --text-s-light: Abel;
+  --text-medium-16-medium: Poppins;
+  --font-gt-super-display: "GT Super Display";
+  --text-normal-14-regular: Graphik;
+  --text-m-regular: Inter;
+  --font-gt-super-txt-trial: "GT Super Txt Trial";
+  --font-gt-super-ds-trial: "GT Super Ds Trial";
+  --font-neue-haas-grotesk-display-pro: "Neue Haas Grotesk Display Pro";
+
+  /* font sizes */
+  --text-s-light-size: 14px;
+  --text-medium-16-medium-size: 16px;
+  --font-size-mini: 15px;
+  --title-xxs-size: 20px;
+  --title-m-size: 46px;
+  --font-size-lg: 18px;
+  --title-xl-size: 110px;
+  --font-size-36xl: 55px;
+  --font-size-14xl: 33px;
+  --title-s-size: 28px;
+  --font-size-3xl: 22px;
+  --title-r-size: 40px;
+  --title-xr-size: 32px;
+  --title-xs-size: 24px;
+  --text-small-12-bold-size: 12px;
+  --title-l-size: 80px;
+  --font-size-18xl: 37px;
+  --font-size-81xl: 100px;
+  --font-size-31xl: 50px;
+  --font-size-11xl: 30px;
+  --font-size-45xl: 64px;
+  --font-size-32xl: 51px;
+  --font-size-19xl: 38px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+  --font-size-41xl: 60px;
+  --font-size-17xl: 36px;
+  --font-size-29xl: 48px;
+  --font-size-51xl: 70px;
+  --font-size-23xl: 42px;
+  --font-size-37xl: 56px;
+  --font-size-10xl: 29px;
+
+  /* Colors */
+  --white: #fff;
+  --sand: #d99330;
+  --grey-grey-400: #a1a8b8;
+  --grey-grey: #9ba7ae;
+  --color-darkgray-100: #a3a3a3;
+  --text-30: #969c99;
+  --grey-600: #656565;
+  --grey-grey-dark: #506a70;
+  --gray-40: #565d5a;
+  --turquoise: #28f7ea;
+  --color-aqua-100: #28f6ea;
+  --secondary-30: #8b8b8b;
+  --grey-500: #767676;
+  --grey-black: #172338;
+  --color-gray-100: rgba(0, 0, 0, 0.4);
+  --grey-200: #f0f3f5;
+  --grey-lighter-150: #f0f1f2;
+  --grey-300: #ededed;
+  --color-darkturquoise: rgba(41, 190, 200, 0);
+  --color-mediumseagreen-100: #37c380;
+  --green-main-500: #00db99;
+  --color-steelblue: #419ada;
+  --color-goldenrod: #ffc121;
+  --black: #000;
+  --color-chocolate: #e65b0d;
+  --grey-light-200: #e0e1e3;
+  --color-gainsboro-100: rgba(217, 217, 217, 0);
+  --grey-main-500: #77828c;
+  --red-dark-600: #da0000;
+  --color-lightseagreen-100: #00c4b8;
+  --color-lightseagreen-200: #00c2b8;
+  --base-gray-80: #4a5660;
+  --color-darkslategray-100: #303d40;
+  --color-darkslategray-200: #333;
+  --color-darkslategray-300: rgba(74, 86, 96, 0);
+  --color-antiquewhite-100: #fff1de;
+  --color-antiquewhite-200: #e6dbcc;
+  --color-oldlace: #fff5e7;
+  --secondary-100: #f04d23;
+  --base-gray-40: #b5bec6;
+  --color-peru-100: #a66100;
+  --color-peru-200: rgba(166, 97, 0, 0.09);
+  --blue-20: #c8cff8;
+  --green-500: #00c24e;
+  --red-600: #d21f03;
+  --blue-500: #274aff;
+
+  /* Gaps */
+  --gap-3xs: 10px;
+  --gap-base: 16px;
+  --gap-9xs: 4px;
+  --gap-xl: 20px;
+  --gap-5xs: 8px;
+  --gap-xs: 12px;
+  --gap-12xs: 1px;
+  --gap-37xl: 56px;
+  --gap-10xl: 29px;
+  --gap-7xl-9: 26.9px;
+  --gap-mini: 15px;
+  --gap-9xl: 28px;
+  --gap-mid: 17px;
+  --gap-120xl: 139px;
+  --gap-25xl: 44px;
+  --gap-33xl: 52px;
+  --gap-5xl: 24px;
+  --gap-11xs-7: 1.7px;
+  --gap-3xs-1: 9.1px;
+  --gap-2xl: 21px;
+  --gap-4xs: 9px;
+  --gap-38xs: -25px;
+  --gap-0: 0px;
+  --gap-3xl: 22px;
+  --gap-lg-9: 18.9px;
+  --gap-sm: 14px;
+  --gap-11xs: 2px;
+  --gap-13xl: 32px;
+  --gap-44xl: 63px;
+  --gap-12xl: 31px;
+  --gap-11xl: 30px;
+  --gap-6xs: 7px;
+  --gap-smi: 13px;
+  --gap-41xl: 60px;
+  --gap-21xl: 40px;
+  --gap-lg: 18px;
+  --gap-4xl: 23px;
+  --gap-32xl: 51px;
+  --gap-6xl: 25px;
+  --gap-28xl: 47px;
+  --gap-7xs: 6px;
+  --gap-2xs: 11px;
+  --gap-5xs-1: 7.1px;
+  --gap-26xl: 45px;
+  --gap-63xs: -50px;
+  --gap-29xl: 48px;
+  --gap-59xl: 78px;
+  --gap-lgi: 19px;
+  --gap-20xl: 39px;
+  --gap-96xl: 115px;
+  --gap-38xl: 57px;
+  --gap-sm-9: 13.9px;
+
+  /* Paddings */
+  --padding-9xl: 28px;
+  --padding-41xl: 60px;
+  --padding-5xl: 24px;
+  --padding-9xs: 4px;
+  --padding-60xl: 79px;
+  --padding-61xl: 80px;
+  --padding-21xl: 40px;
+  --padding-20xl: 39px;
+  --padding-5xs: 8px;
+  --padding-base: 16px;
+  --padding-3xl: 22px;
+  --padding-lg: 18px;
+  --padding-25xl: 44px;
+  --padding-sm: 14px;
+  --padding-13xl: 32px;
+  --padding-59xl: 78px;
+  --padding-xs: 12px;
+  --padding-4xs: 9px;
+  --padding-lgi: 19px;
+  --padding-2xs: 11px;
+  --padding-mini: 15px;
+  --padding-24xl: 43px;
+  --padding-xl: 20px;
+  --padding-10xs: 3px;
+  --padding-118xl: 137px;
+  --padding-49xl: 68px;
+  --padding-53xl: 72px;
+  --padding-37xl: 56px;
+  --padding-45xl: 64px;
+  --padding-189xl: 208px;
+  --padding-197xl: 216px;
+  --padding-4xl: 23px;
+  --padding-3xs-7: 9.7px;
+  --padding-93xl: 112px;
+  --padding-181xl: 200px;
+  --padding-85xl: 104px;
+  --padding-33xl: 52px;
+  --padding-7xl: 26px;
+  --padding-2xl: 21px;
+  --padding-11xl: 30px;
+  --padding-6xl: 25px;
+  --padding-17xl: 36px;
+  --padding-3xs: 10px;
+  --padding-15xl: 34px;
+  --padding-8xl: 27px;
+  --padding-12xl: 31px;
+  --padding-23xl: 42px;
+  --padding-28xl: 47px;
+  --padding-12xs: 1px;
+  --padding-11xs: 2px;
+  --padding-16xl: 35px;
+  --padding-222xl: 241px;
+  --padding-109xl: 128px;
+  --padding-277xl: 296px;
+  --padding-81xl: 100px;
+  --padding-31xl: 50px;
+  --padding-235xl: 254px;
+  --padding-254xl: 273px;
+  --padding-42xl: 61px;
+  --padding-smi: 13px;
+  --padding-528xl-5: 547.5px;
+  --padding-209xl: 228px;
+  --padding-12xs-1: 0.1px;
+  --padding-141xl: 160px;
+  --padding-54xl: 73px;
+  --padding-64xl: 83px;
+  --padding-35xl: 54px;
+  --padding-base-5: 16.5px;
+  --padding-29xl: 48px;
+  --padding-6xs: 7px;
+  --padding-381xl: 400px;
+  --padding-6xl-9: 25.9px;
+  --padding-241xl: 260px;
+  --padding-65xl: 84px;
+  --padding-22xl: 41px;
+  --padding-161xl: 180px;
+  --padding-175xl-5: 194.5px;
+  --padding-116xl-5: 135.5px;
+  --padding-198xl: 217px;
+
+  /* Border radiuses */
+  --br-9xl: 28px;
+  --br-sm: 14px;
+  --br-21xl: 40px;
+  --br-37xl: 56px;
+  --br-31xl: 50px;
+  --br-9xs-2: 3.2px;
+  --br-99xl: 118px;
+  --br-20xl: 39px;
+  --br-3xs: 10px;
+  --br-9xs: 4px;
+  --br-16xl-2: 35.2px;
+  --br-11xs: 2px;
+  --br-base: 16px;
+  --br-85xl: 104px;
+  --br-5xs: 8px;
+  --br-10xl: 29px;
+
+  /* Effects */
+  --shadow-lighter: -14px 14px 30px rgba(0, 0, 0, 0.1);
+  --shadow-focus: 0px 0px 0px 3px rgba(215, 223, 252, 0.5);
+}
+
+/* Custom slider styles for FilterOverlay */
+.slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #7CF5EE;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-thumb::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #7CF5EE;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dual range: track ignores pointer; only thumbs receive events (min + max both work) */
+.dual-range-slider input[type='range'].slider-thumb {
+  pointer-events: none;
+}
+
+.dual-range-slider input[type='range'].slider-thumb::-webkit-slider-thumb {
+  pointer-events: auto;
+}
+
+.dual-range-slider input[type='range'].slider-thumb::-moz-range-thumb {
+  pointer-events: auto;
+}
+
+/* --- PDF capture: prep flag tweaks layout; PDF header is injected in html2canvas clone only --- */
+
+html[data-pdf-capture-prep='true'] .pdf-exclude-from-capture {
+  display: none !important;
+}
+
+/* Real-estate PDF only: hide UI chrome that should not appear in exports */
+html[data-pdf-capture-prep='true'] .pdf-re-exclude-from-capture {
+  display: none !important;
+}
+
+/* Owner report — dedicated print page (pages/pdf/owner-report/[id].tsx). Puppeteer prints this with
+   Chrome's native page.pdf(), which applies @media print, so this is a real print stylesheet — not
+   a rasterized-screenshot workaround like the rules above. */
+@media print {
+  .owner-report-pdf-page .pdf-exclude-from-capture {
+    display: none !important;
+  }
+  /* The "Net Revenue by Month" band's full-bleed vw-breakout only makes sense with a live viewport
+     to bleed against; keep it a normal contained block on the printed page. */
+  .owner-report-pdf-page .owner-report-pdf-fullbleed {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  /* Keep each report block whole on one page where reasonably possible — long tables (bookings,
+     negotiations) are still allowed to flow across pages rather than being forced onto one. */
+  .owner-report-pdf-page section,
+  .owner-report-pdf-page .pdf-hero-image-area {
+    break-inside: avoid;
+  }
+  .owner-report-pdf-page section table {
+    break-inside: auto;
+  }
+  .owner-report-pdf-page tr {
+    break-inside: avoid;
+  }
+}
+
+/* Photo grid shown only while rasterizing the property PDF (normal browsing: hidden). */
+.pdf-only-property-gallery {
+  display: none !important;
+}
+
+html[data-pdf-capture-prep='true'] .pdf-only-property-gallery {
+  display: block !important;
+}
+
+/* PDF: compact hero (villas/rentals only — not concierge collage). */
+html[data-pdf-capture-prep='true'] .pdf-hero-image-area:not(.concierge-pdf-hero) {
+  margin-top: 14px !important;
+  min-height: 340px !important;
+  height: 400px !important;
+  max-height: none !important;
+}
+
+html[data-pdf-capture-prep='true'] .pdf-hero-image-area:not(.concierge-pdf-hero) > button,
+html[data-pdf-capture-prep='true'] .pdf-hero-image-area:not(.concierge-pdf-hero) > a {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
+@media (min-width: 768px) {
+  html[data-pdf-capture-prep='true'] .pdf-hero-image-area:not(.concierge-pdf-hero) {
+    margin-top: 18px !important;
+    min-height: 400px !important;
+    height: 460px !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  html[data-pdf-capture-prep='true'] .pdf-hero-image-area:not(.concierge-pdf-hero) {
+    margin-top: 20px !important;
+    min-height: 440px !important;
+    height: 500px !important;
+  }
+}
+
+/* Event detail PDF: mismo criterio que villas (fondo 100% ancho, recorte vertical); img oculta para html2canvas */
+html[data-pdf-capture-prep='true'] .pdf-hero-image-area.event-detail-pdf-hero {
+  margin-top: 10px !important;
+  min-height: 0 !important;
+  height: 360px !important;
+  overflow: hidden !important;
+  background-image: var(--event-detail-pdf-hero-bg) !important;
+  background-size: 100% auto !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+@media (min-width: 768px) {
+  html[data-pdf-capture-prep='true'] .pdf-hero-image-area.event-detail-pdf-hero {
+    height: 420px !important;
+  }
+}
+@media (min-width: 1920px) {
+  html[data-pdf-capture-prep='true'] .pdf-hero-image-area.event-detail-pdf-hero {
+    height: 460px !important;
+  }
+}
+html[data-pdf-capture-prep='true'] .pdf-hero-image-area.event-detail-pdf-hero > .event-detail-pdf-hero-img {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Real-estate listing PDF: same fixed hero band as rentals (cap height + clip; avoids a taller raster band). */
+html[data-pdf-capture-prep='true'] main.property-pdf-root--real-estate .pdf-hero-image-area:not(.concierge-pdf-hero) {
+  max-height: 400px !important;
+  overflow: hidden !important;
+}
+@media (min-width: 768px) {
+  html[data-pdf-capture-prep='true'] main.property-pdf-root--real-estate .pdf-hero-image-area:not(.concierge-pdf-hero) {
+    max-height: 460px !important;
+  }
+}
+@media (min-width: 1920px) {
+  html[data-pdf-capture-prep='true'] main.property-pdf-root--real-estate .pdf-hero-image-area:not(.concierge-pdf-hero) {
+    max-height: 500px !important;
+  }
+}
+
+/* Villas / agent-property PDF: less space under header strip, tighter hero top, slight vertical crop on hero image */
+html[data-pdf-capture-prep='true'] main.property-pdf-root > .pdf-export-header-strip .pdf-export-header-rule {
+  margin-top: 6px !important;
+  margin-bottom: 4px !important;
+}
+
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-pdf-hero-section {
+  padding-top: 4px !important;
+}
+
+/* Rentals: título / descripción / precio bajo el hero — menos aire vertical en PDF */
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-pdf-hero-title-block {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* Villas hero PDF: ancho completo del contenedor; solo se recorta arriba/abajo (sin recorte lateral) */
+html[data-pdf-capture-prep='true'] main.property-pdf-root .pdf-hero-image-area:not(.concierge-pdf-hero) > button {
+  overflow: hidden !important;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .pdf-hero-image-area:not(.concierge-pdf-hero) > button > div.bg-cover {
+  transform: none !important;
+  -webkit-transform: none !important;
+  background-size: 100% auto !important;
+  background-position: center center !important;
+}
+
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-in-detail-description-html {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Villas / rentals PDF: full-width stacked blocks (hide live two-column + tabs during capture) */
+.villa-pdf-pricing-only {
+  display: none !important;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-pricing-live-grid {
+  display: none !important;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-pdf-pricing-only {
+  display: flex !important;
+  flex-direction: column;
+  gap: 2rem;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-pdf-pricing-only [data-pdf-export-block] {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Rental villa PDF: no map block */
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-rental-location-section {
+  display: none !important;
+}
+
+/* Real-estate listing PDF: omit entire LOCATION section (heading + map) */
+html[data-pdf-capture-prep='true'] main.property-pdf-root .real-estate-location-pdf-exclude {
+  display: none !important;
+}
+
+/* "The Villa" heading: a bit of space above the underline in PDF */
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-the-villa-heading {
+  margin-top: 0.35rem !important;
+  padding-top: 0.35rem !important;
+  padding-bottom: 0.65rem !important;
+}
+.villa-services-pdf-only {
+  display: none !important;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-services-tabs-live {
+  display: none !important;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-services-live-panels {
+  display: none !important;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-services-pdf-only {
+  display: flex !important;
+  flex-direction: column;
+  gap: 2rem;
+}
+html[data-pdf-capture-prep='true'] main.property-pdf-root .villa-services-pdf-only [data-pdf-export-block] {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Agent-property rental hero PDF: mismo criterio — 100% ancho, exceso de alto recortado arriba/abajo */
+html[data-pdf-capture-prep='true'] main.property-pdf-root section.pdf-hero-image-area:not(.concierge-pdf-hero) {
+  background-size: 100% auto !important;
+  background-position: center center !important;
+  padding-top: 6px !important;
+}
+
+/* Concierge detail PDF: same horizontal band as live (max-width + lg padding) so hero crops match the page. */
+html[data-pdf-capture-prep='true'] .concierge-pdf-capture-main {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+  gap: 1rem !important;
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Concierge PDF: no floating logo circle between hero images */
+html[data-pdf-capture-prep='true'] .concierge-pdf-hero-logo {
+  display: none !important;
+}
+
+/* /pdf/[id] — ancho = hoja A4 (210mm ≈ 794px a 96dpi) */
+.pdf-export-canvas {
+  width: 100%;
+  max-width: 210mm;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media print {
+  .pdf-export-canvas {
+    width: 210mm !important;
+    max-width: 210mm !important;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  html,
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+/* Rich text content rendered from Quill editor (concierge service overview) */
+.concierge-rich-text p { margin-bottom: 0.75em; }
+.concierge-rich-text p:last-child { margin-bottom: 0; }
+.concierge-rich-text strong, .concierge-rich-text b { font-weight: 600; }
+.concierge-rich-text em, .concierge-rich-text i { font-style: italic; }
+.concierge-rich-text u { text-decoration: underline; }
+.concierge-rich-text ul { list-style: disc; padding-left: 1.5em; margin-bottom: 0.75em; }
+.concierge-rich-text ol { list-style: decimal; padding-left: 1.5em; margin-bottom: 0.75em; }
+.concierge-rich-text li { margin-bottom: 0.25em; }
+.concierge-rich-text h1 { font-size: 1.5em; font-weight: 600; margin-bottom: 0.5em; }
+.concierge-rich-text h2 { font-size: 1.25em; font-weight: 600; margin-bottom: 0.5em; }
+.concierge-rich-text h3 { font-size: 1.1em; font-weight: 600; margin-bottom: 0.5em; }
+.concierge-rich-text a { color: #506A70; text-decoration: underline; }
+
+/* Google Maps le pone tabindex al wrapper del InfoWindow por accesibilidad, y el navegador le
+   dibuja el foco azul por default al abrirse (real estate list map). Se lo sacamos globalmente
+   como respaldo del outline que ya se saca por JS en el listener 'domready'. */
+.gm-style-iw, .gm-style-iw-a, .gm-style-iw *:focus { outline: none !important; }
+
+/* Rich text content from CMS for real estate descriptions (In Detail / About the Property / Investment Note) */
+.villa-in-detail-description-html p { margin-bottom: 1em; }
+.villa-in-detail-description-html p:last-child { margin-bottom: 0; }
+.villa-in-detail-description-html strong, .villa-in-detail-description-html b { font-weight: 600; }
+.villa-in-detail-description-html em, .villa-in-detail-description-html i { font-style: italic; }
+.villa-in-detail-description-html u { text-decoration: underline; }
+.villa-in-detail-description-html ul { list-style: disc; padding-left: 1.5em; margin-bottom: 1em; }
+.villa-in-detail-description-html ol { list-style: decimal; padding-left: 1.5em; margin-bottom: 1em; }
+.villa-in-detail-description-html li { margin-bottom: 0.4em; }
+.villa-in-detail-description-html a { color: #B17520; text-decoration: underline; }
+
+/* Rich text content from DB for legal pages (privacy, terms, cookies) */
+.legal-rich-content { color: #506A70; font-size: 1rem; line-height: 1.625; font-family: var(--font-neue-haas-grotesk-display-pro), sans-serif; }
+.legal-rich-content h2 { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.01em; color: #172338; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid #E7E2D9; margin-bottom: 1.25rem; scroll-margin-top: 7rem; }
+.legal-rich-content h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.legal-rich-content h3 { font-size: 1.125rem; font-weight: 500; color: #172338; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+.legal-rich-content p { margin-bottom: 1rem; }
+.legal-rich-content p:last-child { margin-bottom: 0; }
+.legal-rich-content strong, .legal-rich-content b { font-weight: 600; color: #172338; }
+.legal-rich-content em, .legal-rich-content i { font-style: italic; }
+.legal-rich-content u { text-decoration: underline; }
+.legal-rich-content ol { list-style: lower-alpha; padding-left: 1.5rem; margin-bottom: 1rem; }
+.legal-rich-content ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+.legal-rich-content li { margin-bottom: 0.5rem; }
+.legal-rich-content a { color: #B17520; text-decoration: underline; }
+.legal-rich-content a:hover { opacity: 0.8; }
+
+/* Property gallery images (agent-property page): block right-click/long-press "save as" */
+.no-save-image {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}

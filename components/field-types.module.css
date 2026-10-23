@@ -1,0 +1,58 @@
+.typeOfService {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+.label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.all {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  color: inherit;
+}
+.container,
+.fieldText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container {
+  flex: 1;
+  justify-content: flex-end;
+}
+.fieldText {
+  align-self: stretch;
+  height: 44px;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm)
+    var(--padding-sm);
+  gap: var(--gap-3xs);
+  color: var(--black);
+}
+.fieldTypes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 255px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}

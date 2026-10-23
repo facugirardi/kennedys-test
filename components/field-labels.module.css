@@ -1,0 +1,134 @@
+.location {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+.label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.leadingIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+}
+.mykonos {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+}
+.leadingIcon1 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  display: none;
+}
+.label1,
+.number {
+  position: relative;
+  line-height: 16px;
+  align-items: center;
+}
+.label1 {
+  height: 16px;
+  width: 29px;
+  font-weight: 500;
+  display: flex;
+}
+.number {
+  width: 24px;
+  display: none;
+  flex-shrink: 0;
+}
+.trailingIcon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+}
+.chip {
+  border-radius: var(--br-20xl);
+  background-color: var(--grey-light-200);
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-9xs);
+}
+.trailingIcon1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.div {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  line-height: 20px;
+  font-weight: 500;
+}
+.chips {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lgi) 0 0;
+  gap: var(--gap-5xs);
+  font-size: var(--text-small-12-bold-size);
+  font-family: var(--text-medium-16-medium);
+}
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100% - 34px);
+}
+.fieldLabels,
+.fieldText {
+  display: flex;
+  max-width: 100%;
+}
+.fieldText {
+  align-self: stretch;
+  height: 44px;
+  background-color: var(--white);
+  border: 0.8px solid var(--grey-grey-dark);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm)
+    var(--padding-sm);
+  gap: var(--gap-3xs);
+  color: var(--black);
+}
+.fieldLabels {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 330px;
+  text-align: left;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .chips {
+    flex-wrap: wrap;
+  }
+  .container,
+  .fieldText {
+    height: auto;
+  }
+}

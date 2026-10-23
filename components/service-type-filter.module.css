@@ -1,0 +1,17 @@
+.serviceType {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+}
+.serviceTypeFilter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xl);
+  text-align: left;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}

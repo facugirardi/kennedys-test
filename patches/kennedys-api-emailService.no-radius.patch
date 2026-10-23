@@ -1,0 +1,38 @@
+--- a/src/services/emailService.ts
++++ b/src/services/emailService.ts
+@@ -116,7 +116,7 @@
+               <v:textbox inset="0px,0px,0px,0px">
+                 <center dir="false" style="color:${BRAND.dark};font-family:sans-serif;font-size:16px">
+             <![endif]-->
+-            <span style="background-color: transparent; border: 1px solid ${BRAND.dark}; border-radius: 999px; color: ${BRAND.dark}; display: inline-block; font-family: ${FONT_LABEL}; font-size: 14px; font-weight: 600; mso-border-alt: none; text-align: center; width: auto; word-break: keep-all; letter-spacing: 1.6px; text-transform: uppercase;">
++            <span style="background-color: transparent; border: 1px solid ${BRAND.dark}; border-radius: 0px; color: ${BRAND.dark}; display: inline-block; font-family: ${FONT_LABEL}; font-size: 14px; font-weight: 600; mso-border-alt: none; text-align: center; width: auto; word-break: keep-all; letter-spacing: 1.6px; text-transform: uppercase;">
+               <span style="padding-left: 30px; padding-right: 30px; padding-top: 5px; padding-bottom: 5px; display: block;">
+                 <span style="line-height: 32px;">${safeLabel}</span>
+               </span>
+@@ -214,7 +214,7 @@
+       <tbody>
+         <tr>
+           <td>
+-            <table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:${BRAND.light};border-radius:14px;color:#000000;padding:22px 20px;width:680px;margin:0 auto;border:1px solid rgba(196,176,141,0.35);" width="680">
++            <table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:${BRAND.light};border-radius:0;color:#000000;padding:22px 20px;width:680px;margin:0 auto;border:1px solid rgba(196,176,141,0.35);" width="680">
+               <tbody>
+                 <tr>
+                   <td style="padding: 0;">
+@@ -297,7 +297,7 @@
+               <tbody>
+                 <tr>
+                   <td>
+-                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:${BRAND.dark};border-radius:16px 16px 0 0;color:#000000;padding:18px;width:680px;margin:0 auto;" width="680">
++                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:${BRAND.dark};border-radius:0;color:#000000;padding:18px;width:680px;margin:0 auto;" width="680">
+                       <tbody>
+                         <tr>
+                           <td class="column column-1" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-weight:400;text-align:left;vertical-align:top;">
+@@ -368,7 +368,7 @@
+               <tbody>
+                 <tr>
+                   <td>
+-                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:${BRAND.dark};border-radius:0 0 16px 16px;color:#000000;padding:22px 30px;width:680px;margin:0 auto;" width="680">
++                    <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:${BRAND.dark};border-radius:0;color:#000000;padding:22px 30px;width:680px;margin:0 auto;" width="680">
+                       <tbody>
+                         <tr>
+                           <td class="column column-1" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;font-weight:400;text-align:left;vertical-align:top;">

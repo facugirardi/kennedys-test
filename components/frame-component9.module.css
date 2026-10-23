@@ -1,0 +1,91 @@
+.elegance,
+.everyEventReflects {
+  position: relative;
+  display: inline-block;
+}
+.elegance {
+  width: 103px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.everyEventReflects {
+  width: 200px;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  color: var(--grey-black);
+}
+.eventStyleElements {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  max-width: calc(100% - 854px);
+}
+.eventsValuesList {
+  height: 95px;
+  width: 0.5px;
+  position: relative;
+}
+.personalization {
+  width: 182px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.weFocusOn {
+  width: 258.9px;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  color: var(--grey-black);
+}
+.attentionToDetail,
+.ourAttentionTo,
+.weFocusOn {
+  position: relative;
+  display: inline-block;
+}
+.attentionToDetail {
+  width: 217px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.ourAttentionTo {
+  width: 259px;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  color: var(--grey-black);
+}
+.eventStyleElementsParent {
+  position: absolute;
+  top: 3655px;
+  left: calc(50% - 631.5px);
+  border: 0.5px solid var(--grey-grey-dark);
+  box-sizing: border-box;
+  width: 1263px;
+  height: 161px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-24xl) 0;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 450px) {
+  .attentionToDetail,
+  .elegance,
+  .personalization {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+}

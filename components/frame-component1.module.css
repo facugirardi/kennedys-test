@@ -1,0 +1,98 @@
+.theDecoration {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 86%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+}
+.leftChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  margin-top: -1px;
+}
+.thePureEnergy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.musicDescription {
+  width: 495px;
+  height: 123px;
+  position: relative;
+  max-width: 100%;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--color-darkslategray-100);
+}
+.left {
+  width: 548.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  max-width: 100%;
+}
+.imageIcon {
+  width: 635px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.leftParent {
+  position: absolute;
+  top: 1181px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-61xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-41xl);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .imageIcon,
+  .left {
+    flex: 1;
+  }
+  .leftParent {
+    flex-wrap: wrap;
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .left {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .theDecoration {
+    font-size: var(--font-size-29xl);
+    line-height: 41px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .theDecoration {
+    font-size: var(--font-size-17xl);
+    line-height: 31px;
+  }
+}

@@ -1,0 +1,40 @@
+.mykonianTourContainer {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.tourInMykonian {
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.mykonianTourBottomWrapper {
+  width: 235px;
+}
+.bottom,
+.mykonianTour,
+.mykonianTourBottomWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bottom {
+  align-self: stretch;
+}
+.mykonianTour {
+  position: absolute;
+  top: 244px;
+  left: 307px;
+  width: 309px;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--grey-black);
+  font-family: var(--font-gt-super-txt-trial);
+}

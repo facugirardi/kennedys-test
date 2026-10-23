@@ -1,0 +1,52 @@
+.iconBrandFacebookColor {
+  width: 26.6px;
+  height: 26.6px;
+  position: relative;
+}
+.iconLinkedin {
+  overflow: hidden;
+}
+.iconLinkedin,
+.iconSocialTiktok {
+  width: 26.6px;
+  height: 26.6px;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild {
+  height: 108px;
+  width: 0.8px;
+  position: relative;
+}
+.vectorWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-4xs) 0 var(--padding-3xs);
+}
+.frameParent {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+  flex-shrink: 0;
+}
+.frameParent,
+.frameWrapper,
+.iconSocialTiktokParent,
+.socialMediaIcons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-9xs) 0 var(--padding-11xs);
+}
+.iconSocialTiktokParent,
+.socialMediaIcons {
+  flex-direction: column;
+  gap: var(--gap-sm-9);
+}
+.socialMediaIcons {
+  gap: var(--gap-lg-9);
+}

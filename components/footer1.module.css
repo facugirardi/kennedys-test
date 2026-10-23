@@ -1,0 +1,307 @@
+.blossomBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--grey-200);
+  width: 100%;
+  height: 587px;
+}
+.organize {
+  color: var(--sand);
+}
+.organize,
+.tripWith {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.organizeYourTripContainer {
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  left: 305px;
+  font-size: var(--title-l-size);
+  letter-spacing: -0.04em;
+  line-height: 98%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: left;
+  display: inline-block;
+  width: 1102px;
+  height: 249px;
+}
+.label {
+  width: 127px;
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  display: inline-block;
+}
+.vectorIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons {
+  position: absolute;
+  top: 485px;
+  left: calc(50% - 100px);
+  background-color: var(--turquoise);
+  width: 199px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-lg);
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+}
+.fromItineraryPlanning {
+  position: absolute;
+  top: 406.9px;
+  left: calc(50% - 252.5px);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  display: inline-block;
+  width: 503px;
+}
+.blossomChild {
+  position: absolute;
+  top: 345.3px;
+  left: 160px;
+  width: 449.7px;
+  height: 179.7px;
+  object-fit: contain;
+}
+.blossomGraphicIcon,
+.capa1Icon {
+  position: absolute;
+  top: 349px;
+  left: 308px;
+  width: 464.5px;
+  height: 0;
+}
+.capa1Icon {
+  top: 227px;
+  left: 941px;
+  width: 66px;
+  height: 66px;
+  overflow: hidden;
+}
+.blossomBottomBackground {
+  position: absolute;
+  top: 90px;
+  left: 711px;
+  width: 216px;
+  height: 222px;
+  object-fit: cover;
+}
+.blossom {
+  width: 100%;
+  position: relative;
+  height: 587px;
+}
+.fullOfficeLocations,
+.fullOfficeLocations1 {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: var(--turquoise);
+  width: 100%;
+  height: 253px;
+}
+.fullOfficeLocations1 {
+  top: 0;
+  background-color: var(--grey-black);
+}
+.concierge,
+.realEstate,
+.villas {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+}
+.concierge,
+.realEstate {
+  width: 70px;
+  display: inline-block;
+}
+.realEstate {
+  width: 76px;
+  height: 22px;
+}
+.fullNavigationLinks,
+.menu {
+  display: flex;
+  align-items: flex-start;
+}
+.menu {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-mid);
+}
+.fullNavigationLinks {
+  position: absolute;
+  top: 12px;
+  left: 85px;
+  width: 119px;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) var(--padding-5xl);
+  box-sizing: border-box;
+}
+.aboutUs,
+.careers,
+.contactUs {
+  width: 62px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+}
+.careers,
+.contactUs {
+  width: 54px;
+}
+.contactUs {
+  width: 75px;
+}
+.menu1 {
+  position: absolute;
+  top: 56px;
+  left: 280px;
+  width: 1068px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-mid);
+}
+.dimarchouAggelouMetaxa {
+  margin: 0;
+}
+.dimarchouAggelouMetaxaContainer {
+  position: absolute;
+  top: 84px;
+  left: 580px;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+  width: 426px;
+}
+.athensOffice {
+  position: absolute;
+  top: 56px;
+  left: 580px;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+}
+.kennedysGroupVacation {
+  position: absolute;
+  top: 262px;
+  left: 68px;
+  font-size: var(--text-s-light-size);
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  width: 1280px;
+}
+.label1 {
+  width: 209px;
+  position: relative;
+  letter-spacing: 1px;
+  line-height: 19px;
+  display: inline-block;
+}
+.buttons1 {
+  position: absolute;
+  top: 67px;
+  left: calc(50% + 359px);
+  background-color: var(--color-darkturquoise);
+  border: 0.8px solid var(--white);
+  box-sizing: border-box;
+  width: 282px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-lg);
+  gap: var(--gap-mini);
+  text-align: center;
+  color: var(--white);
+}
+.capa1Icon1 {
+  position: absolute;
+  top: 164px;
+  left: 1082px;
+  width: 280px;
+  height: 24px;
+  overflow: hidden;
+}
+.argirena84600,
+.mykonosOffice {
+  position: absolute;
+  top: 149px;
+  left: 580px;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+}
+.argirena84600 {
+  top: 179px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  width: 451px;
+  height: 41px;
+}
+.fullOfficeLocationsParent {
+  position: absolute;
+  top: 39px;
+  left: 0;
+  width: 100%;
+  height: 295px;
+}
+.fullYesWhatsapp {
+  position: absolute;
+  bottom: 274px;
+  left: 1254px;
+  border-radius: var(--br-21xl);
+  background-color: var(--sand);
+  width: 84px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.groupParent {
+  position: absolute;
+  top: -39px;
+  left: 0;
+  width: 100%;
+  height: 334px;
+}
+.footer,
+.fullyes {
+  align-self: stretch;
+}
+.footer {
+  position: relative;
+  height: 295px;
+  text-align: left;
+  color: var(--grey-200);
+}
+.fullyes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}

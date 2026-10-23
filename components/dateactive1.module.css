@@ -1,0 +1,8 @@
+.dateactive {
+  border-radius: var(--br-10xl);
+  background-color: var(--secondary-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

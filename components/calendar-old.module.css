@@ -1,0 +1,80 @@
+.icons {
+  width: 26px;
+  position: relative;
+  height: 26px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.september2021 {
+  width: 118px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  display: inline-block;
+}
+.icons1 {
+  height: 26px;
+  width: 26px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.calendarDays,
+.calendarHeader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+}
+.calendarHeader {
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-5xs) 0;
+}
+.calendarDays {
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base) 0;
+  gap: var(--gap-5xs);
+  font-size: var(--text-s-light-size);
+  color: var(--base-gray-40);
+}
+.calendar,
+.calendarDates,
+.calendarWeek {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.calendarWeek {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.calendar,
+.calendarDates {
+  flex-direction: column;
+}
+.calendarDates {
+  align-self: stretch;
+  flex: 1;
+  gap: var(--gap-5xs);
+  color: var(--color-darkslategray-300);
+}
+.calendar {
+  position: absolute;
+  top: 208px;
+  left: 665px;
+  border-radius: var(--br-5xs);
+  width: 654px;
+  height: 426px;
+  overflow: hidden;
+  padding: var(--padding-5xl) var(--padding-29xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+  text-align: center;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--base-gray-80);
+  font-family: var(--text-s-light);
+}

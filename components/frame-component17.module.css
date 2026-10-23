@@ -1,0 +1,238 @@
+.servicesOffered {
+  margin: 0;
+  align-self: stretch;
+  height: 54px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.servicesTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-61xl);
+}
+.frameChild {
+  align-self: stretch;
+  height: 304px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.customizedThemes {
+  width: 211px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.capa1,
+.capa1Wrapper {
+  position: absolute;
+  top: 0;
+}
+.capa1 {
+  left: 10.3px;
+  width: 15.2px;
+  height: 10.3px;
+  overflow: hidden;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+}
+.capa1Wrapper {
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.groupWrapper {
+  width: 10.3px;
+  height: 15.2px;
+  position: relative;
+}
+.groupParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-45xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-sm);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 1;
+}
+.frameItem {
+  align-self: stretch;
+  height: 219px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.comprehensivePlanning {
+  width: 326px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  max-width: 100%;
+}
+.groupContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-197xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-smi);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 2;
+  margin-left: -40px;
+}
+.tailoredExperienceContainerChild {
+  align-self: stretch;
+  height: 246px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.tailoredExperiences {
+  height: 44px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.tailoredExperienceContainer,
+.tailoredExperiencesWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tailoredExperiencesWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-45xl);
+}
+.tailoredExperienceContainer {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-6xs);
+  min-width: 322px;
+  max-width: 100%;
+  z-index: 3;
+  margin-left: -40px;
+  color: var(--sand);
+}
+.coordinationContainerChild {
+  align-self: stretch;
+  height: 250px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.seamlessCoordination {
+  width: 257px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.coordinationContainer {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-189xl) 0 0;
+  gap: var(--gap-xs);
+  min-width: 322px;
+  z-index: 4;
+  margin-left: -40px;
+}
+.coordinationContainer,
+.servicesGrid,
+.servicesTitleParent {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.servicesGrid {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 var(--padding-61xl);
+  row-gap: 20px;
+  text-align: left;
+  font-size: var(--title-xxs-size);
+  color: var(--grey-grey-dark);
+}
+.servicesTitleParent {
+  position: absolute;
+  top: 2660px;
+  left: calc(50% - 720px);
+  background-color: var(--grey-200);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-25xl) 0 var(--padding-45xl);
+  gap: var(--gap-11xl);
+  min-height: 967px;
+  width: 100%;
+  text-align: center;
+  font-size: var(--title-r-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1225px) {
+  .servicesOffered {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+  .comprehensivePlanning,
+  .customizedThemes,
+  .tailoredExperiences {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+  .tailoredExperiencesWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .seamlessCoordination {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .servicesOffered {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+  .servicesGrid,
+  .servicesTitle {
+    padding-left: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+  .servicesGrid {
+    padding-right: var(--padding-21xl);
+  }
+}

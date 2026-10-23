@@ -1,0 +1,103 @@
+.label {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  display: inline-block;
+  min-width: 39px;
+}
+.buttons {
+  background-color: var(--grey-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+  gap: var(--gap-5xs);
+  cursor: pointer;
+  text-align: center;
+}
+.label1 {
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 108px;
+}
+.secondButtonIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+.buttons1 {
+  height: 44px;
+  width: 194px;
+  background-color: var(--color-aqua-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-6xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.secondServiceButton,
+.selectionFields {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.secondServiceButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  justify-content: flex-end;
+}
+.selectionFields {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  max-width: 100%;
+}
+.destinationSelection {
+  flex: 1;
+  flex-direction: column;
+}
+.destinationSelection,
+.serviceOptions,
+.serviceOptionsWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.serviceOptions {
+  align-self: stretch;
+  flex-direction: row;
+}
+.serviceOptionsWrapper {
+  position: absolute;
+  top: 486px;
+  left: calc(50% - 649px);
+  box-shadow: 0 4px 32.4px #f0f3f5;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  width: 1292px;
+  flex-direction: column;
+  padding: var(--padding-base) var(--padding-13xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-black);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 450px) {
+  .selectionFields {
+    flex-wrap: wrap;
+  }
+}

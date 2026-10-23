@@ -1,0 +1,163 @@
+.mykonosVillas,
+.villas {
+  align-self: stretch;
+  position: relative;
+}
+
+.mykonosVillas {
+  margin: 0;
+  font-size: inherit;
+  line-height: 122%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 0;
+}
+
+.villas {
+  font-size: var(--font-size-11xl);
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  color: var(--sand);
+  z-index: 1;
+}
+
+.vuesaxlineararchiveTickIcon {
+  height: 16.9px;
+  width: 16.9px;
+  position: relative;
+}
+
+.vuesaxlineararchiveTick {
+  box-shadow: -4.9px 7px 21.1px #dbddde;
+  border-radius: var(--br-16xl-2);
+  background-color: var(--white);
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-7);
+}
+
+.vuesaxlineararchiveTickParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  z-index: 2;
+}
+
+.label {
+  width: 186px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+}
+
+.vectorIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+}
+
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-aqua-100);
+  width: 265px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  z-index: 3;
+}
+
+.buttons:hover {
+  background-color: var(--color-lightseagreen-200);
+}
+
+.frameChild {
+  width: 140.8px;
+  height: 140.8px;
+  position: absolute;
+  margin: 0 !important;
+  top: -64px;
+  left: 1219px;
+  object-fit: contain;
+  z-index: 4;
+}
+
+.mykonosVillasParent {
+  position: absolute;
+  top: 2733px;
+  left: calc(50% - 720px);
+  background-color: var(--grey-200);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-37xl) var(--padding-61xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  max-width: 1440px;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+
+@media screen and (max-width: 1350px) {
+  .vuesaxlineararchiveTickParent {
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(308px, 534px));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mykonosVillas {
+    font-size: var(--font-size-32xl);
+    line-height: 62px;
+  }
+
+  .villas {
+    font-size: var(--title-xs-size);
+    line-height: 19px;
+  }
+
+  .vuesaxlineararchiveTickParent {
+    grid-template-columns: minmax(308px, 1fr);
+  }
+
+  .mykonosVillasParent {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mykonosVillas {
+    font-size: var(--font-size-19xl);
+    line-height: 47px;
+  }
+
+  .villas {
+    font-size: var(--font-size-lg);
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,76 @@
+.partners1 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  display: inline-block;
+  min-width: 62px;
+}
+.image10Icon {
+  height: 53px;
+  width: 63px;
+  position: relative;
+  object-fit: cover;
+}
+.image11Icon,
+.image12Icon,
+.image13Icon {
+  height: 32px;
+  width: 82px;
+  position: relative;
+  object-fit: cover;
+}
+.image12Icon,
+.image13Icon {
+  height: 33px;
+  width: 69px;
+}
+.image13Icon {
+  height: 39px;
+  width: 129px;
+}
+.image14Icon,
+.image15Icon,
+.image16Icon {
+  height: 53px;
+  width: 46px;
+  position: relative;
+  object-fit: cover;
+}
+.image15Icon,
+.image16Icon {
+  width: 39px;
+}
+.image16Icon {
+  height: 38px;
+  width: 102px;
+}
+.partners,
+.partnersContent {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.partnersContent {
+  width: 984px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.partners {
+  align-self: stretch;
+  background-color: var(--grey-200);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-3xl) 0;
+  box-sizing: border-box;
+  z-index: 4;
+  text-align: center;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+@media screen and (max-width: 1050px) {
+  .partnersContent {
+    flex-wrap: wrap;
+  }
+}

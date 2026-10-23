@@ -1,0 +1,2133 @@
+.topDestinationBackground {
+  position: absolute;
+  top: 1699px;
+  left: 0;
+  background-color: var(--grey-200);
+  width: 100%;
+  height: 1027px;
+}
+
+.kennedysHomepageChild {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 100%;
+  height: 685px;
+  object-fit: cover;
+}
+
+.kennedysHomepageItem {
+  position: absolute;
+  top: 3459px;
+  left: calc(50% - 740.5px);
+  background-color: var(--grey-200);
+  width: 1481px;
+  height: 942px;
+}
+
+.IndividualEventsContainer {
+  width: 100%;
+  position: relative;
+  max-width: 1440px;
+}
+
+.imageIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 408.8px;
+  height: 331px;
+  object-fit: cover;
+}
+
+.celebrateYourLove,
+.weddings {
+  position: absolute;
+  letter-spacing: 0.01em;
+  display: inline-block;
+}
+
+.weddings {
+  margin: 0;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 400;
+  font-family: inherit;
+  width: 123.5px;
+  height: 103.3px;
+  min-width: 123.5px;
+}
+
+.celebrateYourLove {
+  top: 5px;
+  left: 140.4px;
+  font-size: var(--text-s-light-size);
+  line-height: 20px;
+  width: 245.5px;
+  height: 80px;
+}
+
+.groupChild {
+  position: absolute;
+  top: 70px;
+  left: 0.4px;
+  width: 121px;
+  height: 0;
+}
+
+.weddingsParent {
+  position: absolute;
+  width: calc(100% - 22.9px);
+  top: 349px;
+  right: 12.5px;
+  left: 10.4px;
+  height: 103.3px;
+}
+
+.imageParent {
+  position: absolute;
+  top: 3831px;
+  left: 942.2px;
+  width: 408.8px;
+  height: 452.3px;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--grey-black);
+}
+
+.text {
+  height: 24px;
+  width: 352px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dropdownListItem {
+  align-self: stretch;
+  background-color: var(--white);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+
+.dropdownListItem,
+.dropdownListItem1,
+.menuItems {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dropdownListItem1 {
+  align-self: stretch;
+  background-color: var(--grey-lighter-150);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+
+.menuItems {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-9xs) 0;
+}
+
+.dropdownMenu,
+.label {
+  font-size: var(--text-medium-16-medium-size);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 769px;
+  left: 210px;
+  box-shadow: var(--shadow-lighter);
+  border-radius: var(--br-9xs);
+  background-color: var(--white);
+  border: 1px solid var(--grey-grey-400);
+  box-sizing: border-box;
+  width: 384px;
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-5xs);
+  text-align: left;
+  color: var(--black);
+  font-family: var(--text-medium-16-medium);
+}
+
+.label {
+  width: 211px;
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+}
+
+.vectorIcon {
+  height: 11px;
+  width: 5px;
+  position: relative;
+  object-fit: contain;
+  color: var(--white);
+}
+
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-lg);
+  background-color: var(--turquoise);
+  position: absolute;
+  top: 4293px;
+  left: calc(50% - 151.5px);
+  width: 303px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+  white-space: nowrap;
+}
+
+.label1 {
+  width: 198px;
+  position: relative;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  font-family: var(--text-s-light);
+  color: var(--grey-black);
+  text-align: center;
+  display: inline-block;
+}
+
+.buttons1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-lg);
+  background-color: var(--turquoise);
+  position: absolute;
+  top: 4818px;
+  left: calc(50% - 151.5px);
+  width: 303px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+  white-space: nowrap;
+}
+
+.textForDescription {
+  position: absolute;
+  top: calc(50% - 2897.5px);
+  left: calc(50% - 571.5px);
+  font-size: var(--text-small-12-bold-size);
+  line-height: 20px;
+  font-family: var(--text-medium-16-medium);
+  color: var(--secondary-30);
+  text-align: left;
+  display: none;
+  width: 230px;
+}
+
+.text8 {
+  width: 230px;
+  height: 22px;
+  position: relative;
+  line-height: 22px;
+  display: inline-block;
+}
+
+.errorMessage1,
+.iconClose {
+  width: 20px;
+  position: relative;
+  height: 20px;
+}
+
+.errorMessage1 {
+  height: 22px;
+  width: 206px;
+  line-height: 22px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.errorMessage {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-9xs);
+  color: var(--red-dark-600);
+}
+
+.errorMessage,
+.explanatoryText,
+.successMessage {
+  width: 230px;
+  justify-content: flex-start;
+}
+
+.successMessage {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-9xs);
+  color: var(--green-main-500);
+}
+
+.explanatoryText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-11xs);
+}
+
+.counter {
+  height: 22px;
+  width: 26px;
+  position: relative;
+  line-height: 22px;
+  text-align: right;
+  display: inline-block;
+}
+
+.helperText {
+  position: absolute;
+  top: 590px;
+  left: 148px;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  text-align: left;
+  color: var(--grey-main-500);
+  font-family: var(--text-medium-16-medium);
+}
+
+.discoverTheMost {
+  position: absolute;
+  top: 1801px;
+  left: calc(50% - 526.5px);
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  font-family: var(--text-s-light);
+  color: var(--grey-grey-dark);
+  text-align: center;
+  display: inline-block;
+  width: 1018px;
+  height: 99px;
+}
+
+.topRatedDestinations,
+.unforgettableEvents1 {
+  margin: 0;
+  position: absolute;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.topRatedDestinations {
+  top: 1749px;
+  font-size: var(--title-r-size);
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  width: 100%;
+  height: 46px;
+}
+
+.unforgettableEvents1 {
+  top: 0;
+  left: calc(50% - 576px);
+  font-size: inherit;
+  line-height: 110%;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+}
+
+.unforgettableEvents {
+  position: absolute;
+  top: 3517px;
+  left: calc(50% - 576.5px);
+  width: 1152px;
+  height: 70px;
+  font-size: var(--font-size-45xl);
+}
+
+.vectorIcon2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.groupItem,
+.vectorWrapper {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.vectorWrapper {
+  top: 19.2px;
+  left: 22.4px;
+  width: 4.8px;
+  height: 10.4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 var(--padding-5xs) var(--padding-5xs);
+}
+
+.groupItem {
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 0 solid var(--grey-black);
+  width: 100%;
+  height: 100%;
+}
+
+.frameParent,
+.heroBannerChild {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 1235.1px;
+  width: 48.8px;
+}
+
+.heroBannerChild {
+  left: 0;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.groupInner,
+.heroBanner {
+  position: absolute;
+  top: 2479.1px;
+  left: 77px;
+  width: 1283.9px;
+  height: 48.8px;
+}
+
+.groupInner {
+  top: 248px;
+  left: 2px;
+  width: 490px;
+  height: 0.8px;
+}
+
+.tulum {
+  position: absolute;
+  top: 217px;
+  left: 28px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.luxuryVillas,
+.tulumDescription {
+  position: absolute;
+  display: inline-block;
+}
+
+.tulumDescription {
+  top: 226px;
+  left: 505px;
+  font-size: var(--font-size-11xl);
+  line-height: 120%;
+  color: var(--sand);
+  min-width: 50px;
+}
+
+.luxuryVillas {
+  top: 260px;
+  left: 428px;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  width: 124px;
+  height: 29px;
+}
+
+.rectangleIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 555px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.vuesaxlinearheartWrapper {
+  position: absolute;
+  top: 12px;
+  left: 509px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+
+.vectorParent,
+.viewMore {
+  position: absolute;
+  cursor: pointer;
+}
+
+.vectorParent {
+  top: 2398px;
+  left: 154px;
+  width: 555px;
+  height: 289px;
+  text-align: right;
+  font-size: var(--title-xxs-size);
+}
+
+.topRatedBottomContainer {
+  width: 100%;
+  position: absolute;
+  max-width: 1440px;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+.topRatedTopContainer {
+  width: 100%;
+  position: absolute;
+  max-width: 1440px;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0px);
+
+}
+
+.viewMore {
+  text-decoration: underline;
+  top: 1832px;
+  left: calc(50% + 486.5px);
+  letter-spacing: 1px;
+  line-height: 19px;
+  color: inherit;
+  display: inline-block;
+  min-width: 73px;
+}
+
+.ellipseDiv,
+.ibizaLocationParent {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.ellipseDiv {
+  left: 0;
+  border-radius: 50%;
+  border: 0 solid var(--grey-200);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.ibizaLocationParent {
+  bottom: 0;
+  left: 1222px;
+  width: 48.8px;
+}
+
+.heroBanner1 {
+  position: absolute;
+  top: 5758px;
+  left: 84px;
+  width: 1270.8px;
+  height: 48.8px;
+}
+
+.eleganceBackground {
+  position: absolute;
+  top: 5576.6px;
+  left: 1075.9px;
+  width: 159.9px;
+  height: 116px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+
+.groupChild1 {
+  position: absolute;
+  top: 248px;
+  left: 2px;
+  width: 493px;
+  height: 0.8px;
+}
+
+.ibizaDescription,
+.luxuryVillas1 {
+  position: absolute;
+  display: inline-block;
+}
+
+.ibizaDescription {
+  top: 226px;
+  left: 509px;
+  font-size: var(--font-size-11xl);
+  line-height: 120%;
+  color: var(--sand);
+  min-width: 46px;
+}
+
+.luxuryVillas1 {
+  top: 260px;
+  left: 404px;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  width: 148px;
+  height: 42px;
+}
+
+.vectorGroup {
+  position: absolute;
+  top: 2398px;
+  left: 728px;
+  width: 555px;
+  height: 302px;
+  cursor: pointer;
+  text-align: right;
+  font-size: var(--title-xxs-size);
+}
+
+.viewAllEvents {
+  position: absolute;
+  top: 4302px;
+  left: calc(50% + 490.5px);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 18px;
+  display: inline-block;
+  min-width: 91px;
+}
+
+.craftingTimelessMemories {
+  position: absolute;
+  top: 3599px;
+  left: calc(50% - 509.5px);
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  color: var(--grey-black);
+  display: inline-block;
+  width: 1018px;
+  height: 27.4px;
+}
+
+.groupChild3 {
+  position: absolute;
+  top: 177px;
+  left: 12.3px;
+  width: 0.8px;
+  height: 108px;
+}
+
+.iconBrandFacebookColorParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-lg-9);
+}
+
+.vectorContainer {
+  position: absolute;
+  top: 1653px;
+  left: 1389px;
+  width: 26.6px;
+  height: 313px;
+}
+
+.adventureBannerChild {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  height: 275.3px;
+}
+
+.discoverYour {
+  margin: 0;
+}
+
+.adventure {
+  color: var(--color-aqua-100);
+}
+
+.discoverYourNextContainer {
+  margin: 0;
+  position: absolute;
+  top: 12px;
+  left: calc(50% - 524px);
+  font-size: inherit;
+  letter-spacing: -0.04em;
+  line-height: 88%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 1049px;
+  height: 242px;
+}
+
+.adventureBanner {
+  position: absolute;
+  top: 242px;
+  width: 100%;
+  height: 214px;
+  text-align: center;
+  font-size: var(--font-size-81xl);
+  color: var(--white);
+  font-family: var(--text-s-light);
+}
+
+.meganisiVillaIcon,
+.ourClients {
+  position: relative;
+  max-width: 100%;
+}
+
+.ourClients {
+  margin: 0;
+  width: 1152px;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 103%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.meganisiVillaIcon {
+  width: 1017px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.clients,
+.clientsWrapper,
+.vuesaxlinearheartFrame {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.clients {
+  align-self: stretch;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.clientsWrapper,
+.vuesaxlinearheartFrame {
+  position: absolute;
+}
+
+.clientsWrapper {
+  top: 6100px;
+  left: -3px;
+  background-color: var(--grey-200);
+  width: 100%;
+  flex-direction: column;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--title-r-size);
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+
+.vuesaxlinearheartFrame {
+  top: 12px;
+  left: 507px;
+  border-radius: var(--br-37xl);
+  background-color: var(--white);
+  flex-direction: row;
+  padding: var(--padding-5xs);
+}
+
+.rectangleParent {
+  position: absolute;
+  top: 1859px;
+  left: 154px;
+  width: 555px;
+  height: 519px;
+  cursor: pointer;
+}
+
+.heroBannerInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroBanner2 {
+  position: absolute;
+  top: 1859px;
+  left: 728px;
+  width: 555px;
+  height: 519px;
+  cursor: pointer;
+}
+
+.div {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 31px);
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  display: inline-block;
+  min-width: 68px;
+}
+
+.luxuryVillas2,
+.parent {
+  position: absolute;
+  width: 148px;
+}
+
+.luxuryVillas2 {
+  top: 43px;
+  left: calc(50% - 74px);
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  text-align: center;
+  display: inline-block;
+  height: 42px;
+}
+
+.parent {
+  top: 106px;
+  left: calc(50% - 74.5px);
+  height: 85px;
+}
+
+.mykonos {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 183.5px);
+  font-size: var(--title-l-size);
+  letter-spacing: -0.04em;
+  line-height: 98%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: center;
+}
+
+.heroBannerChild1 {
+  position: absolute;
+  top: 69px;
+  left: calc(50% - 74.5px);
+  border-radius: 50%;
+  background-color: var(--color-gainsboro-100);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+}
+
+.heroBanner3 {
+  position: absolute;
+  top: 2049px;
+  left: calc(50% - 471.5px);
+  width: 367px;
+  height: 217px;
+  text-align: right;
+  font-size: var(--title-m-size);
+  color: var(--white);
+}
+
+.div1 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 25px);
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  display: inline-block;
+  min-width: 51px;
+}
+
+.chalets,
+.group {
+  position: absolute;
+  left: calc(50% - 74px);
+  width: 148px;
+}
+
+.chalets {
+  top: 43px;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  line-height: 140%;
+  display: inline-block;
+  height: 42px;
+}
+
+.group {
+  top: 106px;
+  height: 85px;
+}
+
+.courchevel {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 245px);
+  font-size: var(--title-l-size);
+  letter-spacing: -0.04em;
+  line-height: 98%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.heroBannerChild2 {
+  position: absolute;
+  top: 69px;
+  left: calc(50% - 74px);
+  border-radius: 50%;
+  background-color: var(--color-gainsboro-100);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+}
+
+.heroBanner4 {
+  position: absolute;
+  top: 2049px;
+  left: calc(50% + 46.5px);
+  width: 490px;
+  height: 217px;
+  font-size: var(--title-m-size);
+  color: var(--white);
+}
+
+.luxury {
+  color: var(--sand);
+}
+
+.span {
+  color: var(--grey-black);
+}
+
+.rental {
+  color: var(--grey-grey-dark);
+}
+
+.luxuryVillaAndContainer {
+  margin: 0;
+  position: absolute;
+  top: 290px;
+  left: 434px;
+  font-size: inherit;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 884px;
+  height: 166px;
+}
+
+.descriptionBackgroundIcon {
+  position: absolute;
+  top: 289px;
+  left: 92px;
+  width: 316px;
+  height: 129px;
+  object-fit: cover;
+}
+
+.luxuryRental {
+  position: absolute;
+  top: 991px;
+  width: 100%;
+  height: 656.5px;
+  max-width: 1440px;
+  text-align: left;
+  font-size: 72px;
+  color: var(--grey-grey-dark);
+  font-family: var(--text-s-light);
+}
+
+.travelDesign1 {
+  width: 1278px;
+  position: relative;
+  font-size: var(--title-xxs-size);
+  line-height: 22px;
+  text-transform: uppercase;
+  display: none;
+}
+
+.exploreTheWorld {
+  color: var(--grey-black);
+}
+
+.exploreTheWorld,
+.withOurOwn {
+  color: var(--grey-black);
+  margin: 0;
+  width: 1102px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.title,
+.title1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title1 {
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+
+.title {
+  align-self: stretch;
+  justify-content: center;
+  color: var(--sand);
+}
+
+.fromPlanningTo,
+.label2 {
+  width: 1392px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: none;
+}
+
+.label2 {
+  width: 211px;
+  font-size: var(--text-medium-16-medium-size);
+  letter-spacing: 0.5px;
+  font-family: var(--text-s-light);
+  color: var(--white);
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+}
+
+.buttons2,
+.title2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-13xl);
+  background-color: var(--grey-black);
+  height: 52px;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+}
+
+.title2 {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 var(--padding-5xl);
+  gap: var(--gap-xl);
+  font-size: var(--text-medium-16-medium-size);
+}
+
+.explore {
+  text-decoration: none;
+  width: 90px;
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: inherit;
+  display: inline-block;
+}
+
+.categoryLabels {
+  align-self: stretch;
+  background-color: var(--color-chocolate);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-5xl);
+}
+
+.categoryImages {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-9xl) 0 0;
+  box-sizing: border-box;
+  background-image: url(/images/category-images@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.unwind {
+  width: 84px;
+  position: relative;
+  font-size: var(--title-xxs-size);
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: var(--text-s-light);
+  color: var(--black);
+  text-align: center;
+  display: inline-block;
+}
+
+.image,
+.unwindWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.unwindWrapper {
+  cursor: default;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-5xl);
+  background-color: var(--turquoise);
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image {
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-9xl) 0 0;
+  box-sizing: border-box;
+  background-image: url(/images/image1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.experience {
+  width: 122px;
+  position: relative;
+  font-size: var(--title-xxs-size);
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: var(--text-s-light);
+  color: var(--black);
+  text-align: center;
+  display: inline-block;
+}
+
+.experienceWrapper,
+.image1 {
+  display: flex;
+  align-items: center;
+}
+
+.experienceWrapper {
+  cursor: default;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-5xl);
+  background-color: var(--color-goldenrod);
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image1 {
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-9xl) 0 0;
+  box-sizing: border-box;
+  background-image: url(/images/image2@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.inspire {
+  width: 76px;
+  position: relative;
+  font-size: var(--title-xxs-size);
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+}
+
+.image2,
+.inspireWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.inspireWrapper {
+  cursor: default;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-5xl);
+  background-color: var(--color-steelblue);
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image2 {
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-9xl) 0 0;
+  box-sizing: border-box;
+  background-image: url(/images/image3@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.adventure1 {
+  width: 120px;
+  position: relative;
+  font-size: var(--title-xxs-size);
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+}
+
+.adventureWrapper,
+.image3 {
+  display: flex;
+  align-items: center;
+}
+
+.adventureWrapper {
+  cursor: default;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-5xl);
+  background-color: var(--sand);
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image3 {
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-9xl) 0 0;
+  box-sizing: border-box;
+  background-image: url(/images/image4@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.discover {
+  width: 98px;
+  position: relative;
+  font-size: var(--title-xxs-size);
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+}
+
+.discoverWrapper {
+  cursor: default;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-5xl);
+  background-color: var(--color-mediumseagreen-100);
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.discoverWrapper,
+.image4,
+.images {
+  display: flex;
+  align-items: center;
+}
+
+.image4 {
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-9xl) 0 0;
+  box-sizing: border-box;
+  background-image: url(/images/image5@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.images {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  /* height: 440px;  */
+  height: 27.5rem;
+  font-size: var(--title-xxs-size);
+}
+
+.travelDesign {
+  width: 100%;
+  background-color: #E2F3F6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-25xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  z-index: 0;
+  font-size: var(--title-m-size);
+}
+
+.popularLocations {
+  width: 130px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  display: inline-block;
+}
+
+.athensRivieraCreteContainer,
+.mykonosBodrumIbizaContainer {
+  width: 65px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 210%;
+  display: inline-block;
+}
+
+.athensRivieraCreteContainer {
+  width: 99px;
+  flex-shrink: 0;
+}
+
+.col,
+.locationLists {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-33xl);
+}
+
+.col {
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.luxuryVillasFor {
+  width: 153px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  white-space: pre-wrap;
+  display: inline-block;
+}
+
+.mykonosVillasBodrumVillasContainer {
+  width: 121px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 210%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.mykonosVillasBodrumVillasIWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.popularServices {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  font-weight: bold !important;
+}
+
+.privateSecurityKidsContainer {
+  height: 136px;
+  width: 121px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 210%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.chauffeurCarRentalYachtsPrParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-25xl);
+}
+
+.luxuryVillasFor1 {
+  width: 151px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  white-space: pre-wrap;
+  display: inline-block;
+}
+
+.blue {
+  align-self: stretch;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) var(--padding-61xl);
+  gap: var(--gap-120xl);
+  z-index: 1;
+  text-align: left;
+  color: var(--grey-black);
+  /* border-top: 1px solid black; */
+}
+
+.concierge,
+.villas {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+}
+
+.villas {
+  width: 90px;
+  display: inline-block;
+}
+
+.concierge {
+  align-self: stretch;
+}
+
+.col4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+
+.dimarchouAggelouMetaxaContainer,
+.weManage {
+  width: 132px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+}
+
+.dimarchouAggelouMetaxaContainer {
+  width: 426px;
+}
+
+.officeAddresses {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+
+.argirena84600 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 140%;
+  display: inline-block;
+  height: 41px;
+  flex-shrink: 0;
+}
+
+.col6 {
+  width: 451px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+}
+
+.label3 {
+  height: 19px;
+  width: 209px;
+  position: relative;
+  letter-spacing: 1px;
+  line-height: 19px;
+  display: inline-block;
+}
+
+.buttons3 {
+  width: 283px;
+  background-color: var(--color-darkturquoise);
+  border: 0.8px solid var(--white);
+  box-sizing: border-box;
+  height: 52px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-lg);
+  gap: var(--gap-mini);
+}
+
+.logoIcon {
+  width: 280px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xl-9);
+}
+
+.blue1,
+.col7 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.col7 {
+  width: 283px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-10xl);
+  text-align: center;
+  color: var(--white);
+}
+
+.blue1 {
+  align-self: stretch;
+  background-color: var(--grey-black);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-21xl) var(--padding-61xl);
+  z-index: 2;
+  text-align: left;
+  color: var(--grey-200);
+}
+
+.partners1 {
+  width: 62px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  display: inline-block;
+}
+
+.image10Icon {
+  height: 53px;
+  width: 63px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image11Icon,
+.image12Icon,
+.image13Icon {
+  height: 32px;
+  width: 82px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image12Icon,
+.image13Icon {
+  width: 69px;
+  height: 33px;
+}
+
+.image13Icon {
+  height: 39px;
+  width: 129px;
+}
+
+.image14Icon,
+.image15Icon,
+.image16Icon {
+  height: 53px;
+  width: 46px;
+  position: relative;
+  object-fit: cover;
+}
+
+.image15Icon,
+.image16Icon {
+  width: 39px;
+}
+
+.image16Icon {
+  height: 38px;
+  width: 102px;
+}
+
+.partnerLogos,
+.partners {
+  display: flex;
+  align-items: center;
+}
+
+.partnerLogos {
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-37xl);
+}
+
+.partners {
+  align-self: stretch;
+  background-color: var(--grey-200);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-3xl) 0;
+  z-index: 3;
+  color: var(--grey-grey-dark);
+}
+
+.kennedysGroupVacation {
+  width: 345px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  display: inline-block;
+}
+
+.footerLink {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footerLink:hover {
+  opacity: 0.75;
+}
+
+.bottom,
+.whatsap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+  .bottom {
+    align-self: stretch;
+    background-color: var(--turquoise);
+    padding: var(--padding-5xs) 0;
+    z-index: 4;
+    text-align: center;
+    font-size: var(--text-s-light-size);
+    color: var(--grey-black);
+    font-family: var(--text-s-light);
+  }
+
+  .whatsap {
+    width: 84px;
+    margin: 0 !important;
+    position: absolute;
+    bottom: 366px;
+    right: 40px;
+    border-radius: var(--br-21xl);
+    background-color: var(--sand);
+    height: 60px;
+    z-index: 5;
+  }
+
+  .cards,
+  .footer,
+  .footer1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards,
+  .footer {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    font-size: var(--text-medium-16-medium-size);
+    color: var(--white);
+    font-family: var(--text-s-light);
+    position: relative;
+  }
+
+  .cards {
+    top: 605px;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 var(--padding-60xl) 0 var(--padding-61xl);
+    box-sizing: border-box;
+    gap: var(--gap-xs);
+  }
+
+.contactLabels {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+ 
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-9xs);
+}
+
+.vuesaxlinearsmsIcon {
+  height: 19px;
+  width: 19px;
+  position: relative;
+}
+
+.contact {
+  width: 54px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+}
+
+.button1,
+.topMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+}
+
+.topMenu {
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+}
+
+.concierge1,
+.events1,
+.realEstate1,
+.vacationRentals {
+  width: 118px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.concierge1,
+.events1,
+.realEstate1 {
+  width: 74px;
+}
+
+.events1,
+.realEstate1 {
+  width: 48px;
+}
+
+.realEstate1 {
+  width: 80px;
+}
+
+/* Estilo para resaltar el enlace activo */
+.activeLink {
+  color: #172338 !important; /* Un tono más oscuro de blanco */
+  font-weight: 600; /* Texto en negrita para mayor énfasis */
+  position: relative;
+}
+
+
+.mainLinks {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+  color: var(--white);
+  font-family: var(--text-s-light);
+  z-index: 1000;
+}
+
+.capa1Icon {
+  height: 27px;
+  width: 309px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+
+}
+
+.logIn1,
+.weManageYour {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  display: inline-block;
+}
+
+.weManageYour {
+  width: 158px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logIn1 {
+  width: 38px;
+  font-size: var(--text-s-light-size);
+  font-family: var(--text-s-light);
+  color: var(--white);
+  text-align: right;
+}
+
+.logIn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs) var(--padding-5xl);
+  background-color: var(--sand);
+  border-radius: var(--br-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.imageIcon1 {
+  height: 43px;
+  width: 43px;
+  position: relative;
+  border-radius: var(--br-9xl);
+  object-fit: cover;
+}
+
+.image5,
+.right,
+.topNav {
+  flex-direction: row;
+  align-items: center;
+}
+
+.image5 {
+  display: none;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+
+.right,
+.topNav {
+  display: flex;
+}
+
+.right {
+  flex: 1;
+  justify-content: flex-end;
+  gap: var(--gap-base);
+}
+
+.topNav {
+  width: 100%;
+  justify-content: space-between;
+  text-align: right;
+  font-size: var(--text-medium-16-medium-size);
+}
+
+.kennedysHomepage,
+.navFinal {
+  font-family: var(--text-s-light);
+}
+
+.navFinal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 8px solid var(--sand);
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-9xl) var(--padding-41xl) var(--padding-5xl);
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--white);
+  z-index: 10;
+}
+
+.navFinalBlack,
+.navFinal nav div {
+  color: var(--black) !important;
+}
+
+.kennedysHomepage {
+  width: 100%;
+  min-height: 7643px;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--text-s-light-size);
+  color: var(--grey-grey-dark);
+  display: flex;
+  justify-content: center;
+}
+
+
+.footerContainer {
+  margin-top: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 1225px) {
+  .luxuryRental {
+    height: auto;
+    min-height: 656.5;
+  }
+
+  .kennedysHomepage {
+    height: auto;
+    min-height: 7643;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .weddings {
+    font-size: var(--title-xs-size);
+    line-height: 24px;
+  }
+
+  .topRatedDestinations {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+
+  .unforgettableEvents1 {
+    font-size: var(--font-size-32xl);
+    line-height: 56px;
+  }
+
+  .ibizaDescription,
+  .tulumDescription {
+    font-size: var(--title-xs-size);
+    line-height: 29px;
+  }
+
+  .discoverYourNextContainer {
+    font-size: var(--font-size-31xl);
+    line-height: 53px;
+  }
+
+  .ourClients {
+    font-size: var(--title-xr-size);
+    line-height: 33px;
+  }
+
+  .div {
+    font-size: var(--font-size-18xl);
+    line-height: 35px;
+  }
+
+  .mykonos {
+    font-size: var(--title-r-size);
+    line-height: 47px;
+  }
+
+  .div1 {
+    font-size: var(--font-size-18xl);
+    line-height: 35px;
+  }
+
+  .courchevel {
+    font-size: var(--title-r-size);
+    line-height: 47px;
+  }
+
+  .luxuryVillaAndContainer {
+    font-size: 58px;
+    line-height: 55px;
+  }
+
+  .cards {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .weddings {
+    font-size: var(--font-size-lg);
+    line-height: 18px;
+  }
+
+  .topRatedDestinations {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+
+  .unforgettableEvents1 {
+    font-size: var(--font-size-19xl);
+    line-height: 42px;
+  }
+
+  .tulum {
+    font-size: var(--text-medium-16-medium-size);
+    line-height: 18px;
+  }
+
+  .ibizaDescription,
+  .tulumDescription {
+    font-size: var(--font-size-lg);
+    line-height: 22px;
+  }
+
+  .discoverYourNextContainer {
+    font-size: var(--font-size-11xl);
+    line-height: 35px;
+  }
+
+  .ourClients {
+    font-size: var(--title-xs-size);
+    line-height: 25px;
+  }
+
+  .div {
+    font-size: var(--title-s-size);
+    line-height: 26px;
+  }
+
+  .mykonos {
+    font-size: var(--title-xs-size);
+    line-height: 31px;
+  }
+
+  .div1 {
+    font-size: var(--title-s-size);
+    line-height: 26px;
+  }
+
+  .courchevel {
+    font-size: var(--title-xs-size);
+    line-height: 31px;
+  }
+
+  .luxuryVillaAndContainer {
+    font-size: 43px;
+    line-height: 41px;
+  }
+}
