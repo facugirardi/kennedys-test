@@ -10,6 +10,7 @@ export default function Document() {
          * las reglas @import quedan después del reset de Tailwind, por lo que el
          * navegador las descarta (spec: @import debe preceder cualquier regla).
          */}
+        <link rel="preconnect" href="https://api.kennedys.group" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

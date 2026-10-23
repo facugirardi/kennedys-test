@@ -713,13 +713,65 @@ export function normalizeExperienceGalleryRaw(gallery: unknown): string[] {
  * URL para hero / foto principal: sin wsrv.nl; el navegador carga el archivo tal cual (p. ej. JPG desde la API).
  * Rutas absolutas del sitio (/), data: y http(s) se devuelven sin cambio; paths relativos al storage vía resolveMediaUrl.
  */
-export function heroImageDirectUrl(src: string | undefined | null): string {
+export function heroImageDirectUrl(
+  src: string | undefined | null,
+  width?: number
+): string {
   if (src == null || String(src).trim() === "") return "";
   const s = String(src).trim();
-  if (s.startsWith("data:")) return s;
-  if (s.startsWith("/")) return s;
-  if (/^https?:\/\//i.test(s)) return s;
-  return resolveMediaUrl(s);
+  let url: string;
+  if (s.startsWith("data:")) url = s;
+  else if (s.startsWith("/")) url = s;
+  else if (/^https?:\/\//i.test(s)) url = s;
+  else url = resolveMediaUrl(s);
+  return width ? optimizedImageUrl(url, width) : url;
+}
+
+/** Must match next.config.js `images.deviceSizes` + `images.imageSizes`, or /_next/image answers 400. */
+const NEXT_IMAGE_WIDTHS = [96, 160, 256, 384, 480, 640, 828, 1080, 1280, 1600, 1920];
+
+function getOptimizableRemoteHosts(): string[] {
+  const hosts = ["api.kennedys.group"];
+  try {
+    const apiHost = new URL(process.env.NEXT_PUBLIC_API_URL || "").hostname;
+    if (apiHost) hosts.push(apiHost);
+  } catch {
+    /* NEXT_PUBLIC_API_URL not set or relative */
+  }
+  return hosts;
+}
+
+/**
+ * Routes an on-screen image through Vercel's /_next/image (resize + AVIF/WebP + edge cache).
+ * Only for <img>/CSS shown in the browser: OG meta, PDF/html2canvas capture and server-side code
+ * must keep using the raw URL. Anything it can't safely optimize (data/blob URLs, SVG/GIF, hosts
+ * missing from next.config.js remotePatterns) is returned unchanged.
+ */
+export function optimizedImageUrl(
+  src: string | undefined | null,
+  width: number,
+  quality = 75
+): string {
+  if (src == null) return "";
+  const s = String(src).trim();
+  if (!s || s.startsWith("data:") || s.startsWith("blob:")) return s;
+  if (/\.(svg|gif)(\?|#|$)/i.test(s)) return s;
+  if (s.startsWith("/_next/")) return s;
+
+  if (/^https?:\/\//i.test(s)) {
+    let host = "";
+    try {
+      host = new URL(s).hostname;
+    } catch {
+      return s;
+    }
+    if (!getOptimizableRemoteHosts().includes(host)) return s;
+  } else if (!s.startsWith("/") || s.startsWith("//")) {
+    return s;
+  }
+
+  const w = NEXT_IMAGE_WIDTHS.find((size) => size >= width) ?? NEXT_IMAGE_WIDTHS[NEXT_IMAGE_WIDTHS.length - 1];
+  return `/_next/image?url=${encodeURIComponent(s)}&w=${w}&q=${quality}`;
 }
 
 export function formatNightlyPriceLabel(value?: number | string | null, currencySymbol = "$") {

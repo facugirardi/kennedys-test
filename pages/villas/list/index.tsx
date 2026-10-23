@@ -2021,12 +2021,14 @@ const KennedysVillasList = () => {
                                                                       return '/images/villa-detail@2x.png';
                                                                     }
                                                                     if (/^https?:\/\//i.test(rawUrl)) {
-                                                                      return heroImageDirectUrl(rawUrl);
+                                                                      return heroImageDirectUrl(rawUrl, 828);
                                                                     }
                                                                     const imageUrl = resolveMediaUrl(rawUrl);
-                                                                    return imageUrl && imageUrl.trim() !== '' ? heroImageDirectUrl(imageUrl) : '/images/villa-detail@2x.png';
+                                                                    return imageUrl && imageUrl.trim() !== '' ? heroImageDirectUrl(imageUrl, 828) : '/images/villa-detail@2x.png';
                                                                 })()}
                                                                 alt={villa.title}
+                                                                loading="lazy"
+                                                                decoding="async"
                                                                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
                                                                 onError={(e) => {
                                                                     const target = e.target as HTMLImageElement;
@@ -2142,8 +2144,10 @@ const KennedysVillasList = () => {
                                             >
                                                 <div className="relative overflow-hidden h-64">
                                                     <img
-                                                        src={heroImageDirectUrl(getVillaImageUrl(villa))}
+                                                        src={heroImageDirectUrl(getVillaImageUrl(villa), 828)}
                                                         alt={villa.title}
+                                                        loading="lazy"
+                                                        decoding="async"
                                                         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
                                                         onError={(e) => {
                                                             const target = e.target as HTMLImageElement;

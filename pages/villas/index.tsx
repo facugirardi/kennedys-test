@@ -489,7 +489,7 @@ const KennedysVillas = ({
                                 aria-label="View trending villa"
                             >
                                 <img
-                                    src={heroImageDirectUrl(trendingImage)}
+                                    src={heroImageDirectUrl(trendingImage, 1280)}
                                     alt={trendingTitle}
                                     className="absolute inset-0 w-full h-full object-cover object-center brightness-[0.85]"
                                     loading="lazy"
@@ -562,7 +562,7 @@ const KennedysVillas = ({
                                             width: index === 0 ? '343px' : index === 1 ? '309px' : index === 2 ? '390px' : '341px',
                                         }}>
                                             <img
-                                                src={heroImageDirectUrl(getPrimaryImage(property))}
+                                                src={heroImageDirectUrl(getPrimaryImage(property), 828)}
                                                 alt={property?.title || 'Villa'}
                                                 style={{
                                                     width:  index === 0 ? '343px' : index === 1 ? '309px' : index === 2 ? '390px' : '341px',
@@ -622,7 +622,7 @@ const KennedysVillas = ({
                                 >
                                     <div className="relative w-full aspect-[16/10] max-h-[280px]">
                                         <img
-                                            src={heroImageDirectUrl(getPrimaryImage(property))}
+                                            src={heroImageDirectUrl(getPrimaryImage(property), 828)}
                                             alt={property?.title || 'Villa'}
                                             className="w-full h-full object-cover"
                                         />
@@ -683,7 +683,7 @@ const KennedysVillas = ({
                                             guests={property?.classification?.idealPersons || property?.classification?.maxPersons}
                                             poolsSpecLabel={formatPoolsJacuzziSpecLine(property?.classification)}
                                             onCardContainerClick={() => onCardPickedClick(property?.id)}
-                                            villaImage={heroImageDirectUrl(getPrimaryImage(property))}
+                                            villaImage={heroImageDirectUrl(getPrimaryImage(property), 828)}
                                             imageWidth={362}
                                             imageHeight={240}
                                         />
@@ -716,7 +716,7 @@ const KennedysVillas = ({
                                     guests={property?.classification?.idealPersons || property?.classification?.maxPersons}
                                     poolsSpecLabel={formatPoolsJacuzziSpecLine(property?.classification)}
                                     onCardContainerClick={() => onCardMykonosClick(property?.id)}
-                                    villaImage={heroImageDirectUrl(getPrimaryImage(property))}
+                                    villaImage={heroImageDirectUrl(getPrimaryImage(property), 828)}
                                     imageWidth={362}
                                     imageHeight={240}
                                     propBorder="none"
@@ -799,7 +799,7 @@ const KennedysVillas = ({
                                     guests={property?.classification?.idealPersons || property?.classification?.maxPersons}
                                     poolsSpecLabel={formatPoolsJacuzziSpecLine(property?.classification)}
                                     onCardContainerClick={() => onCardParosClick(property?.id)}
-                                    villaImage={heroImageDirectUrl(getPrimaryImage(property))}
+                                    villaImage={heroImageDirectUrl(getPrimaryImage(property), 828)}
                                     imageWidth={362}
                                     imageHeight={240}
                                 />
@@ -843,7 +843,7 @@ const KennedysVillas = ({
                                                     handleSelectedProperty(foundProperty);
                                                 }
                                             }}
-                                            villaImage={heroImageDirectUrl(getPrimaryImage(property))}
+                                            villaImage={heroImageDirectUrl(getPrimaryImage(property), 828)}
                                             liked={Boolean(property?.id && isLiked(property.id))}
                                             onToggleFavorite={property?.id ? () => { if (!isAuthenticated) { router.push('/login?returnTo=' + encodeURIComponent(router.asPath)); return; } toggleFavorite(property.id); } : undefined}
                                             isTogglingFavorite={Boolean(property?.id && pendingIds.has(property.id))}

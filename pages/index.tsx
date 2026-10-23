@@ -9,7 +9,7 @@ import { FiMapPin } from "react-icons/fi";
 import { getAllProperties, getPropertyLocationStats } from "@/lib/api/properties";
 import { getAllEvents } from "@/lib/api/events";
 import { getReviews } from "@/lib/api/content";
-import { resolveMediaUrl, normalizePropertiesResponse, formatCurrency, getPropertyPriceCurrencySymbol, slugify } from "@/lib/utils";
+import { resolveMediaUrl, optimizedImageUrl, normalizePropertiesResponse, formatCurrency, getPropertyPriceCurrencySymbol, slugify } from "@/lib/utils";
 import { usePropertyLikes } from '@/src/hooks/usePropertyLikes'
 import { useAuth } from '@/src/contexts/AuthContext'
 import { TestimonialsSection, ClientsStrip, ListYourPropertyBanner } from '@/components/promotional-blocks'
@@ -221,11 +221,11 @@ const KennedysHomepage: React.FC<HomePageProps> = ({
 }) => {
   const hi = initialHomeImages;
   const hp = initialHomePositions;
-  const homeImg = (key: string, fallback: string) => hi[key] || fallback;
+  const homeImg = (key: string, fallback: string, width = 1080) => optimizedImageUrl(hi[key] || fallback, width);
   const homePos = (key: string) => hp[key] || '50% 50%';
 
   const HOME_SERVICE_CARDS = HOME_SERVICE_CARDS_CONFIG.map(c => ({
-    img: homeImg(c.pageKey, c.defaultImg),
+    img: homeImg(c.pageKey, c.defaultImg, 480),
     pos: homePos(c.pageKey),
     label: c.label,
     href: c.href,
@@ -597,8 +597,10 @@ const KennedysHomepage: React.FC<HomePageProps> = ({
         {/* HERO */}
         <div className="relative h-[480px] md:h-[685px] w-full">
           <img
-            src={homeImg(PAGE_HERO_KEYS.homeHero, '/images/home/home-image.webp')}
+            src={homeImg(PAGE_HERO_KEYS.homeHero, '/images/home/home-image.webp', 1920)}
             alt="Hero"
+            fetchPriority="high"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover brightness-[0.7]"
             style={{ objectPosition: homePos(PAGE_HERO_KEYS.homeHero) }}
           />
@@ -1188,8 +1190,10 @@ const KennedysHomepage: React.FC<HomePageProps> = ({
               >
                 <div className="relative h-[236px] w-full shrink-0 overflow-hidden bg-[#E8EBED] md:h-[256px] lg:h-[268px]">
                   <img
-                    src={event.image}
+                    src={optimizedImageUrl(event.image, 828)}
                     alt={event.name}
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                   />
                 </div>
@@ -1292,8 +1296,10 @@ const KennedysHomepage: React.FC<HomePageProps> = ({
                     <Link href={canToggle ? card.href || `/real-estate/${card.id}` : '/real-estate'} className="flex flex-col">
                       <div className="h-[160px] w-full overflow-hidden md:h-[200px]">
                         <img
-                          src={card.image}
+                          src={optimizedImageUrl(card.image, 828)}
                           alt={card.title}
+                          loading="lazy"
+                          decoding="async"
                           className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         />
                       </div>

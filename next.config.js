@@ -39,10 +39,46 @@ const eventsLocationSlugs = villaLocationSlugs
 const experiencesLocationSlugs = villaLocationSlugs
 const conciergeLocationSlugs = villaLocationSlugs
 
+const apiHost = (() => {
+  try {
+    return new URL(process.env.NEXT_PUBLIC_API_URL || 'https://api.kennedys.group/api').hostname
+  } catch {
+    return 'api.kennedys.group'
+  }
+})()
+
+const longCache = 'public, max-age=31536000, immutable'
+// Same filename can be re-uploaded with new content, so no `immutable` for public images.
+const imageCache = 'public, max-age=604800, stale-while-revalidate=2592000'
+
 const nextConfig = {
   reactStrictMode: true,
+  compress: true,
+  poweredByHeader: false,
   typescript: {
     ignoreBuildErrors: true,
+  },
+  images: {
+    // The API serves originals (~1MB each, Cache-Control max-age=0, no CDN). Routing them through
+    // Vercel's optimizer resizes them, converts to AVIF/WebP and caches them at the edge.
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      { protocol: 'https', hostname: apiHost },
+      { protocol: 'https', hostname: 'img.youtube.com' },
+    ],
+    deviceSizes: [480, 640, 828, 1080, 1280, 1600, 1920],
+    imageSizes: [96, 160, 256, 384],
+    minimumCacheTTL: 60 * 60 * 24 * 30,
+  },
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'react-icons', 'date-fns', '@radix-ui/react-icons'],
+  },
+  async headers() {
+    return [
+      { source: '/images/:path*', headers: [{ key: 'Cache-Control', value: imageCache }] },
+      { source: '/fonts/:path*', headers: [{ key: 'Cache-Control', value: longCache }] },
+      { source: '/:file(.*\\.woff2)', headers: [{ key: 'Cache-Control', value: longCache }] },
+    ]
   },
   async rewrites() {
     const realEstateRewrites = realEstateLocationSlugs.map((slug) => ({
